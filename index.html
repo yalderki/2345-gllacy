@@ -6,8 +6,8 @@
   </head>
   <body>
 	<header class="header">
-		<img src="http://placehold.it/150x100" alt="logo" class="logo">
 		<nav class="main-navigation">
+			<a class="logo"><img src="http://placehold.it/150x100" alt="logo" width="" height=""></a>
 			<ul>
 				<li class="main-navigation__item">
 					<a class="main-navigation__link" href="catalog.html">Каталог</a>
@@ -25,23 +25,108 @@
 			<span class="login-form">Вход</span>
 			<span class="cart-form">Пусто</span>
 		</div>
-		<div class="contacts">
+		<div class="header-contacts">
 			<span class="contacts-time">С 10 до 20, ежедневно</span>
 			<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
-		</div>
+		</div> 
 	</header>
-	<main>
+	<main class="container">
 		<div class="slider">
 			<ul>
-				<li><img src="http://placehold.it/150x100" alt="slide_1"></li>
-				<li><img src="http://placehold.it/150x100" alt="slide_2"></li>
-				<li><img src="http://placehold.it/150x100" alt="slide_3"></li>
+				<li><img src="http://placehold.it/150x100" alt="slide_1" width="" height=""></li>
+				<li><img src="http://placehold.it/150x100" alt="slide_2" width="" height=""></li>
+				<li><img src="http://placehold.it/150x100" alt="slide_3" width="" height=""></li>
 			</ul>
 			<a href="catalog.html">Давайте оба!</a>
 		</div>
+		<section class="actions">
+			<div class="action-first">
+				<div class="action-first__name">Малинка даром!</div>
+				<span>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</span>
+				<a href="catalog.html">Хочу варенье!</a>
+			</div>
+			<div class="action-second">
+				<div class="action-second__name">Шоколадки даром!</div>
+				<span>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</span>
+				<a href="catalog.html">Хочу варенье!</a>
+			</div>
+		</section>
+		<section class="popular-items">
+			<ul>
+				<li class="popular-items__item">
+					<span class="popular-items__label">хит</span>
+					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+					<span class="popular-items__price">310</span>
+					<span class="popular-items__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+				</li>
+				<li class="popular-items__item">
+					<span class="popular-items__label">хит</span>
+					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+					<span class="popular-items__price">380</span>
+					<span class="popular-items__description">Сливочно-кофейное с кусочками шоколада</span>
+				</li>
+				<li class="popular-items__item">
+					<span class="popular-items__label">хит</span>
+					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+					<span class="popular-items__price">355</span>
+					<span class="popular-items__description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+				</li>
+				<li class="popular-items__item">
+					<span class="popular-items__label">хит</span>
+					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+					<span class="popular-items__price">415</span>
+					<span class="popular-items__description">Сливочное крем-брюле с карамельной подливкой</span>
+				</li>
+			</ul>
+		</section>
+		<section class="content">
+			<h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+			<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+			<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+			<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+			<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+		</section>
+		<section class="features">
+			<article class="blog-preview">
+				<span>Новое в нашем блоге</span>
+				<h2>10 способов сервировки фруктовых щербетов к столу</h2>
+			</article>
+			<div class="subscription">
+				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+				<form action="" method="post">
+					<input type="email" name="email" id="email-field" value="Электронная почта">
+				</form>
+			</div>
+		</section>
+		<section class="footer-contacts">
+			<img src="http://placehold.it/1200x400" alt="">
+			<div class="footer-address">
+				<span>Адрес главного офиса и офлайн-магазина:</span>
+				<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+				<span>Для заказов по телефону:</span>
+				<span>8 812 450-25-25</span>
+				<span>(с 10 до 20 ежедневно)</span>
+				<span>Форма обратной связи</span>
+			</div>
+		</section>
 	</main>
 	<footer>
-		
+		<ul class="social-links">
+			<li><a href="https://twitter.com" target="_blank"></a></li>
+			<li><a href="https://instagram.com" target="_blank"></a></li>
+			<li><a href="https://facebook.com" target="_blank"></a></li>
+			<li><a href="https://vk.com" target="_blank"></a></li>
+		</ul>
+		<ul class="footer-navigation">
+			<li><a href="">Для поставщиков</a></li>
+			<li><a href="">О производстве</a></li>
+			<li><a href="">Наши документы</a></li>
+			<li><a href="">Экологические стандарты</a></li>
+		</ul>
+		<div class="footer-copyright">
+			<img src="http://placehold.it/100x100" alt="">
+			<span>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> &copy; 2017<span>
+		</div>
 	</footer>
   </body>
 </html>
