@@ -7,23 +7,23 @@
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo"><img src="http://placehold.it/154x640" alt="logo" width="154px" height="64px"></a>
+			<a class="main-header-logo" href="index.html"><img src="http://placehold.it/154x640" alt="logo" width="154px" height="64px"></a>
 			<ul class="site-navigation">
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="catalog.html">Каталог</a>
+				<li class="site-navigation-item" class="site-navigation-current">
+					<a class="site-navigation-link" href="catalog.html">Каталог</a>
 					<ul class="catalog-navigation">
-						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="new-items.html">Новинки</a></li>
-						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="ice-cream.html">Сливочное</a></li>
-						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="sorbet.html">Щербеты</a></li>
-						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="fruit-ice.html">Фруктовый лед</a></li>
-						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="melorin.html">Мелорин</a></li>
+						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="new-items.html">Новинки</a></li>
+						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="ice-cream.html">Сливочное</a></li>
+						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="sorbet.html">Щербеты</a></li>
+						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="fruit-ice.html">Фруктовый лед</a></li>
+						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="melorin.html">Мелорин</a></li>
 					</ul>
 				</li>
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="delivery.html">Доставка и оплата</a>
+				<li class="site-navigation-item">
+					<a class="site-navigation-link" href="delivery.html">Доставка и оплата</a>
 				</li>
-				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="about.html">О Компании</a>
+				<li class="site-navigation-item">
+					<a class="site-navigation-link" href="about.html">О Компании</a>
 				</li>
 			</ul>
 		</nav>
@@ -31,14 +31,110 @@
 			<span class="search-form"></span>
 
 			<span class="login-form">Вход</span>
-			<span class="cart-form">Пусто</span>
+			<span class="cart-form">2 товара</span>
 		</div>
 		<div class="header-contacts">
 			<span class="contacts-time">С 10 до 20, ежедневно</span>
 			<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
 		</div> 
 	</header>
-	<main>
+	<main class="container">
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li class="breadcrumbs-current">Сливочное</li>
+		</ul>
+		<h1 class="page-title">Сливочное мороженое</h1>
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтры</h2>
+			<!-- Здесь будет форма-->
+		</section>
+		<section class="catalog">
+			<h2 class="visually-hidden">Список мороженок</h2>
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">310</span>
+						<span class="catalog-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a>
+				</li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">380</span>
+						<span class="catalog-description">Сливочно-кофейное с кусочками шоколада</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">355</span>
+						<span class="catalog-description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">415</span>
+						<span class="catalog-description">Сливочное крем-брюле с карамельной подливкой</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">325</span>
+						<span class="catalog-description">Сливочное с брусничным джемом</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">410</span>
+						<span class="catalog-description">Сливочно-черничное с цельными ягодами черники</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">375</span>
+						<span class="catalog-description">Сливочно-лимонное с карамельной присыпкой</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">320</span>
+						<span class="catalog-description">Сливочное с шоколадной стружкой</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">440</span>
+						<span class="catalog-description">Сливочно-ванильное с кусочками шоколада</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">435</span>
+						<span class="catalog-description">Сливочноe с ментоловым сиропом</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">355</span>
+						<span class="catalog-description">Сливочное с кусочками черного шоколада</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+				<li class="catalog-item"><a href="catalog-item.html" class="catalog-link">
+						<img src="http://placehold.it/267x267" alt="" class="catalog-photo" width="267px" height="267px">
+						<span class="catalog-price">420</span>
+						<span class="catalog-description">Сливочное с мятным сиропом</span>
+						<a href="catalog-item.html" class="catalog-quick-look button"></a>
+					</a></li>
+			</ul>
+			<ul class="pagination-list">
+				<li class="pagination-item pagination-item-current"><a>1</a></li>
+				<li class="pagination-item"><a href="#">2</a></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">4</a></li>
+				<li class="pagination-item"><a href="#">5</a></li>
+			</ul>
+		</section>
 	</main>
 	<footer>
 		<ul class="social-links">
@@ -48,10 +144,10 @@
 			<li><a class="social-button" href="https://vk.com" target="_blank"></a></li>
 		</ul>
 		<ul class="footer-navigation">
-			<li><a href="">Для поставщиков</a></li>
-			<li><a href="">О производстве</a></li>
-			<li><a href="">Наши документы</a></li>
-			<li><a href="">Экологические стандарты</a></li>
+			<li><a href="for-dealers.html">Для поставщиков</a></li>
+			<li><a href="production.html">О производстве</a></li>
+			<li><a href="documents.html">Наши документы</a></li>
+			<li><a href="eco-standarts.html">Экологические стандарты</a></li>
 		</ul>
 		<div class="footer-copyright">
 			<img src="http://placehold.it/108x39" alt="" width="108px" height="39px">
