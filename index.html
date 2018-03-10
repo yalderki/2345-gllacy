@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Глейси - Главная</title>
   </head>
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo"><img src="http://placehold.it/150x100" alt="logo" width="" height=""></a>
+			<a class="main-header-logo"><img src="http://placehold.it/154x640" alt="logo" width="154px" height="64px"></a>
 			<ul class="site-navigation">
 				<li class="main-navigation__item">
 					<a class="main-navigation__link" href="catalog.html">Каталог</a>
@@ -29,6 +29,7 @@
 		</nav>
 		<div class="header-actions">
 			<span class="search-form"></span>
+
 			<span class="login-form">Вход</span>
 			<span class="cart-form">Пусто</span>
 		</div>
@@ -45,19 +46,19 @@
 				<li><img src="http://placehold.it/150x100" alt="slide_2" width="" height=""></li>
 				<li><img src="http://placehold.it/150x100" alt="slide_3" width="" height=""></li>
 			</ul>
-			<a href="catalog.html">Давайте оба!</a>
+			<a href="catalog.html" class="button">Давайте оба!</a>
 		</div>
 		<section class="actions">
 			<h2 class="visually-hidden">Акции</h2>
 			<div class="action-first">
 				<div class="action-first__name">Малинка даром!</div>
 				<span>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</span>
-				<a href="catalog.html">Хочу варенье!</a>
+				<a href="action-first.html" class="button">Хочу варенье!</a>
 			</div>
 			<div class="action-second">
 				<div class="action-second__name">Шоколадки даром!</div>
 				<span>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</span>
-				<a href="catalog.html">Хочу варенье!</a>
+				<a href="action-second.html" class="button">Хочу шоколадки!</a>
 			</div>
 		</section>
 		<section class="popular-items">
@@ -66,7 +67,7 @@
 				<li class="popular-items__item">
 					<a class="popular-item__link" href="#">
 						<span class="popular-items__label">хит</span>
-						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<img src="http://placehold.it/267x267" alt="" class="popular-items__photo" width="267px" height="267px">
 						<span class="popular-items__price">310</span>
 						<span class="popular-items__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
 					</a>
@@ -74,7 +75,7 @@
 				<li class="popular-items__item">
 					<a class="popular-item__link" href="#">
 						<span class="popular-items__label">хит</span>
-						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<img src="http://placehold.it/267x267" alt="" class="popular-items__photo" width="267px" height="267px">
 						<span class="popular-items__price">380</span>
 						<span class="popular-items__description">Сливочно-кофейное с кусочками шоколада</span>
 					</a>
@@ -82,7 +83,7 @@
 				<li class="popular-items__item">
 					<a class="popular-item__link" href="#">
 						<span class="popular-items__label">хит</span>
-						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<img src="http://placehold.it/267x267" alt="" class="popular-items__photo" width="267px" height="267px">
 						<span class="popular-items__price">355</span>
 						<span class="popular-items__description">Сливочно-клубничное с присыпкой из белого шоколада</span>
 					</a>
@@ -90,7 +91,7 @@
 				<li class="popular-items__item">
 					<a class="popular-item__link" href="#">
 						<span class="popular-items__label">хит</span>
-						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<img src="http://placehold.it/267x267" alt="" class="popular-items__photo" width="267px" height="267px">
 						<span class="popular-items__price">415</span>
 						<span class="popular-items__description">Сливочное крем-брюле с карамельной подливкой</span>
 					</a>
@@ -125,7 +126,7 @@
 				<span>Для заказов по телефону:</span>
 				<span>8 812 450-25-25</span>
 				<span>(с 10 до 20 ежедневно)</span>
-				<span>Форма обратной связи</span>
+				<a href="feedback.html" class="button">Форма обратной связи</a>
 			</div>
 		</section>
 	</main>
@@ -143,9 +144,19 @@
 			<li><a href="">Экологические стандарты</a></li>
 		</ul>
 		<div class="footer-copyright">
-			<img src="http://placehold.it/100x100" alt="">
+			<img src="http://placehold.it/108x39" alt="" width="108px" height="39px">
 			<span>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> &copy; 2017<span>
 		</div>
 	</footer>
+	<section class="modal modal-login">
+		<h2 class="visually-hidden">Личный кабинет</h2>
+		<!-- Здесь будет форма-->
+		<span class="modal-close">x</span>
+	</section>
+	<section class="modal modal-feedback">
+		<h2>Мы обязательно вам ответим!</h2>
+		<!-- Здесь будет форма-->
+		<span class="modal-close">x</span>
+	</section>
   </body>
 </html>

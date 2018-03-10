@@ -2,42 +2,50 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Глейси - Каталог</title>
   </head>
   <body>
-	<header class="header">
-		<img src="http://placehold.it/150x100" alt="logo" class="logo">
+	<header class="main-header">
 		<nav class="main-navigation">
-			<ul>
+			<a class="main-header-logo"><img src="http://placehold.it/154x640" alt="logo" width="154px" height="64px"></a>
+			<ul class="site-navigation">
 				<li class="main-navigation__item">
 					<a class="main-navigation__link" href="catalog.html">Каталог</a>
+					<ul class="catalog-navigation">
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="new-items.html">Новинки</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="ice-cream.html">Сливочное</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="sorbet.html">Щербеты</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="fruit-ice.html">Фруктовый лед</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="melorin.html">Мелорин</a></li>
+					</ul>
 				</li>
 				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="">Доставка и оплата</a>
+					<a class="main-navigation__link" href="delivery.html">Доставка и оплата</a>
 				</li>
 				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="">О Компании</a>
+					<a class="main-navigation__link" href="about.html">О Компании</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="header-actions">
 			<span class="search-form"></span>
+
 			<span class="login-form">Вход</span>
 			<span class="cart-form">Пусто</span>
 		</div>
 		<div class="header-contacts">
 			<span class="contacts-time">С 10 до 20, ежедневно</span>
 			<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
-		</div>
+		</div> 
 	</header>
 	<main>
 	</main>
 	<footer>
 		<ul class="social-links">
-			<li><a href="https://twitter.com" target="_blank"></a></li>
-			<li><a href="https://instagram.com" target="_blank"></a></li>
-			<li><a href="https://facebook.com" target="_blank"></a></li>
-			<li><a href="https://vk.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://twitter.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://instagram.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://facebook.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://vk.com" target="_blank"></a></li>
 		</ul>
 		<ul class="footer-navigation">
 			<li><a href="">Для поставщиков</a></li>
@@ -46,9 +54,14 @@
 			<li><a href="">Экологические стандарты</a></li>
 		</ul>
 		<div class="footer-copyright">
-			<img src="http://placehold.it/100x100" alt="">
+			<img src="http://placehold.it/108x39" alt="" width="108px" height="39px">
 			<span>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> &copy; 2017<span>
 		</div>
 	</footer>
+	<section class="modal modal-login">
+		<h2 class="visually-hidden">Личный кабинет</h2>
+		<!-- Здесь будет форма-->
+		<span class="modal-close">x</span>
+	</section>
   </body>
 </html>
