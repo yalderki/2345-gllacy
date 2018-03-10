@@ -5,18 +5,25 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-	<header class="header">
+	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="logo"><img src="http://placehold.it/150x100" alt="logo" width="" height=""></a>
-			<ul>
+			<a class="main-header-logo"><img src="http://placehold.it/150x100" alt="logo" width="" height=""></a>
+			<ul class="site-navigation">
 				<li class="main-navigation__item">
 					<a class="main-navigation__link" href="catalog.html">Каталог</a>
+					<ul class="catalog-navigation">
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="new-items.html">Новинки</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="ice-cream.html">Сливочное</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="sorbet.html">Щербеты</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="fruit-ice.html">Фруктовый лед</a></li>
+						<li class="catalog-navigation__item"><a class="catalog-navigation__link" href="melorin.html">Мелорин</a></li>
+					</ul>
 				</li>
 				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="">Доставка и оплата</a>
+					<a class="main-navigation__link" href="delivery.html">Доставка и оплата</a>
 				</li>
 				<li class="main-navigation__item">
-					<a class="main-navigation__link" href="">О Компании</a>
+					<a class="main-navigation__link" href="about.html">О Компании</a>
 				</li>
 			</ul>
 		</nav>
@@ -31,6 +38,7 @@
 		</div> 
 	</header>
 	<main class="container">
+		<h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
 		<div class="slider">
 			<ul>
 				<li><img src="http://placehold.it/150x100" alt="slide_1" width="" height=""></li>
@@ -40,6 +48,7 @@
 			<a href="catalog.html">Давайте оба!</a>
 		</div>
 		<section class="actions">
+			<h2 class="visually-hidden">Акции</h2>
 			<div class="action-first">
 				<div class="action-first__name">Малинка даром!</div>
 				<span>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</span>
@@ -52,30 +61,39 @@
 			</div>
 		</section>
 		<section class="popular-items">
+			<h2 class="visually-hidden">Популярные товары</h2>
 			<ul>
 				<li class="popular-items__item">
-					<span class="popular-items__label">хит</span>
-					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
-					<span class="popular-items__price">310</span>
-					<span class="popular-items__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+					<a class="popular-item__link" href="#">
+						<span class="popular-items__label">хит</span>
+						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<span class="popular-items__price">310</span>
+						<span class="popular-items__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+					</a>
 				</li>
 				<li class="popular-items__item">
-					<span class="popular-items__label">хит</span>
-					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
-					<span class="popular-items__price">380</span>
-					<span class="popular-items__description">Сливочно-кофейное с кусочками шоколада</span>
+					<a class="popular-item__link" href="#">
+						<span class="popular-items__label">хит</span>
+						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<span class="popular-items__price">380</span>
+						<span class="popular-items__description">Сливочно-кофейное с кусочками шоколада</span>
+					</a>
 				</li>
 				<li class="popular-items__item">
-					<span class="popular-items__label">хит</span>
-					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
-					<span class="popular-items__price">355</span>
-					<span class="popular-items__description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+					<a class="popular-item__link" href="#">
+						<span class="popular-items__label">хит</span>
+						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<span class="popular-items__price">355</span>
+						<span class="popular-items__description">Сливочно-клубничное с присыпкой из белого шоколада</span>
+					</a>
 				</li>
 				<li class="popular-items__item">
-					<span class="popular-items__label">хит</span>
-					<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
-					<span class="popular-items__price">415</span>
-					<span class="popular-items__description">Сливочное крем-брюле с карамельной подливкой</span>
+					<a class="popular-item__link" href="#">
+						<span class="popular-items__label">хит</span>
+						<img src="http://placehold.it/200x200" alt="" class="popular-items__photo">
+						<span class="popular-items__price">415</span>
+						<span class="popular-items__description">Сливочное крем-брюле с карамельной подливкой</span>
+					</a>
 				</li>
 			</ul>
 		</section>
@@ -99,6 +117,7 @@
 			</div>
 		</section>
 		<section class="footer-contacts">
+			<h2 class="visually-hidden">Контактные данные</h2>
 			<img src="http://placehold.it/1200x400" alt="">
 			<div class="footer-address">
 				<span>Адрес главного офиса и офлайн-магазина:</span>
@@ -112,10 +131,10 @@
 	</main>
 	<footer>
 		<ul class="social-links">
-			<li><a href="https://twitter.com" target="_blank"></a></li>
-			<li><a href="https://instagram.com" target="_blank"></a></li>
-			<li><a href="https://facebook.com" target="_blank"></a></li>
-			<li><a href="https://vk.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://twitter.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://instagram.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://facebook.com" target="_blank"></a></li>
+			<li><a class="social-button" href="https://vk.com" target="_blank"></a></li>
 		</ul>
 		<ul class="footer-navigation">
 			<li><a href="">Для поставщиков</a></li>
