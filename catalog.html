@@ -50,7 +50,74 @@
 		<h1 class="page-title">Сливочное мороженое</h1>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
-			<!-- Здесь будет форма-->
+			<!-- filter forms -->
+			<section class="filters">
+		        <h2 class="visually-hidden">Фильтр товаров</h2>
+		        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+		          <fieldset>
+		          	<legend>Сортировка:</legend>
+		          	<select name="sorting">
+		          		<option value="popular" selected="selected">по популярности</option>
+		          		<option value="price">по цене</option>
+		          		<option value="fat-content">по жирности</option>
+		          	</select>
+		          </fieldset>
+		          <fieldset>
+		          	<legend>Цена: 100 руб. - 500 руб.</legend>
+		          	<div class="slider-pricebar">
+		          		
+		          	</div>
+		          </fieldset>
+		          <fieldset>
+		            <legend>Жирность:</legend>
+		            <ul>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="zero-percent" id="filter-zero">
+		                <label for="filter-zero">0%</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="ten-percent" id="filter-ten" checked>
+		                <label for="filter-ten">до 10%</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="thirty-percent" id="filter-thirty">
+		                <label for="filter-thirty">до 30%</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="over-thirty-percent" id="filter-over-thirty">
+		                <label for="filter-over-thirty">выше 30%</label>
+		              </li>
+		            </ul>
+		          </fieldset>	
+		          <fieldset>
+		            <legend>Наполнители:</legend>
+		            <ul>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+		                <label for="filter-chocolate">шоколадные</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>
+		                <label for="filter-sugar-powder">сахарные присыпки</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruit" id="filter-fruit">
+		                <label for="filter-fruit">фрукты</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
+		                <label for="filter-syrup">сиропы</label>
+		              </li>
+		              <li class="filter-option">
+		                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
+		                <label for="filter-jam">джемы</label>
+		              </li>
+		            </ul>
+		          </fieldset>		          
+		          <button type="submit" class="filter-button button">Применить</button>
+		        </form>
+		      </section>
+      <!-- filter forms -->
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">Список мороженок</h2>
