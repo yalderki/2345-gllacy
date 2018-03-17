@@ -36,7 +36,26 @@
 				</form>
 			</div>
 			<a class="login-link" href="login.html">Вход</a>
-			<span class="cart-form">Пусто</span>
+			<span class="cart-form">2 товара</span>
+			<section class="cart-full">
+				<h2 class="visually-hidden">Содержимое корзины</h2>
+				<div class="cart-items">
+					<div class="cart-item">
+						<div class="cart-item-name">Пломбир с апельсиновым джемом</div>
+						<div class="cart-item-volume">1,5 кг х <span class="cart-item-pure-price">200 руб.</span></div>
+						<div class="cart-item-price">300 руб.</div>
+						<button class="cart-item-delete" type="button">Убрать из корзины</button>
+					</div>
+					<div class="cart-item">
+						<div class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</div>
+						<div class="cart-item-volume">1,5 кг х <span class="cart-item-pure-price">300 руб.</span></div>
+						<div class="cart-item-price">450 руб.</div>
+						<button class="cart-item-delete" type="button">Убрать из корзины</button>
+					</div>		
+				</div>
+				<div class="cart-sum">Итого: 750 руб.</div>
+				<button class="cart-buy" type="button">Оформить заказ</button>
+			</section>
 		</div>
 		<div class="header-contacts">
 			<span class="contacts-time">С 10 до 20, ежедневно</span>
@@ -62,7 +81,8 @@
 		          	<legend>Сортировка:</legend>
 		          	<select name="sorting">
 		          		<option value="popular" selected="selected">по популярности</option>
-		          		<option value="price">по цене</option>
+		          		<option value="price-ascending">сначала недорогие</option>
+		          		<option value="price-descending">сначала дорогие</option>
 		          		<option value="fat-content">по жирности</option>
 		          	</select>
 		          </fieldset>
