@@ -178,8 +178,21 @@
     <!-- feedback form -->
 	<section class="modal modal-feedback">
 		<h2>Мы обязательно вам ответим!</h2>
-		<!-- Здесь будет форма-->
-		<span class="modal-close">x</span>
+		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="feedback-item">
+				<label class="visually-hidden" for="feedback-name">Имя</label>
+				<input id="feedback-name" type="text" name="name" value="" placeholder="Как вас зовут?">
+			</p>
+			<p class="feedback-item">
+				<label class="visually-hidden" for="feedback-email">Email</label>
+				<input id="feedback-email" type="text" name="email" value="" placeholder="Ваша почта для ответа?">
+			</p>
+			<p class="feedback-item">
+				<textarea name="feedback-comment" id="comment-field" rows="7" cols="40">Напишите что-нибудь...</textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 	<!-- feedback form -->
 	<!-- modal forms -->
