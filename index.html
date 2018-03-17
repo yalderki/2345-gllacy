@@ -32,7 +32,7 @@
 			<div class="main-header-search">
 				<a class="search-link" href="#">Поиск</a>
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-					<input type="text" name="search" placeholder="Введите слово">
+					<input type="text" name="search" placeholder="Что ищем?">
 				</form>
 			</div>
 			<a class="login-link" href="login.html">Вход</a>
@@ -115,8 +115,12 @@
 			</article>
 			<div class="subscription">
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<form action="" method="post">
-					<input type="email" name="email" id="email-field" value="Электронная почта">
+				<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="subscription-item">
+						<label class="visually-hidden" for="user-email">Email</label>
+						<input type="email" name="email" id="email-field" value="Электронная почта">
+					</p>
+					<button class="button" type="submit">Отправить</button>
 				</form>
 			</div>
 		</section>
@@ -159,11 +163,11 @@
 	<section class="modal modal-login">
 		<h2 class="visually-hidden">Личный кабинет</h2>
 	    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-	        <p>
+	        <p class="login-item">
 	          <label class="visually-hidden" for="user-email">Email</label>
 	          <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
 	        </p>
-	        <p>
+	        <p class="login-item">
 	          <label class="visually-hidden" for="user-password">Пароль</label>
 	          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
 	        </p>
