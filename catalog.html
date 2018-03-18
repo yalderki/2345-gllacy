@@ -32,11 +32,12 @@
 			<div class="main-header-search">
 				<a class="search-link" href="#">Поиск</a>
 				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-					<input type="text" name="search" placeholder="Что ищем?">
+					<label for="search" class="visually-hidden">Поиск</label>
+					<input type="text" name="search" id="search" placeholder="Что ищем?">
 				</form>
 			</div>
 			<a class="login-link" href="login.html">Вход</a>
-			<span class="cart-form">2 товара</span>
+			<a class="cart-form" href="cart.html">2 товара</a>
 			<section class="cart-full">
 				<h2 class="visually-hidden">Содержимое корзины</h2>
 				<div class="cart-items">
@@ -54,9 +55,29 @@
 					</div>		
 				</div>
 				<div class="cart-sum">Итого: 750 руб.</div>
-				<button class="cart-buy" type="button">Оформить заказ</button>
+				<a class="cart-buy" href="cart.html">Оформить заказ</a>
 			</section>
 		</div>
+		<!-- login form -->
+		<section class="modal modal-login">
+			<h2 class="visually-hidden">Личный кабинет</h2>
+		    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		        <p>
+		          <label class="visually-hidden" for="user-email">Email</label>
+		          <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+		        </p>
+		        <p>
+		          <label class="visually-hidden" for="user-password">Пароль</label>
+		          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+		        </p>
+		        <button class="button" type="submit">Войти</button>
+		        <p class="login-password-info">
+		          <a class="restore" href="#">Забыли пароль?</a>
+		          <a class="registration" href="#">Новая регистрация</a>
+		        </p>	        
+		    </form>
+	    </section>
+    	<!-- login form -->
 		<div class="header-contacts">
 			<span class="contacts-time">С 10 до 20, ежедневно</span>
 			<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
@@ -77,7 +98,6 @@
 			<section class="filters">
 		        <h2 class="visually-hidden">Фильтр товаров</h2>
 		        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-		          <fieldset>
 		          	<legend>Сортировка:</legend>
 		          	<select name="sorting">
 		          		<option value="popular" selected="selected">по популярности</option>
@@ -85,13 +105,11 @@
 		          		<option value="price-descending">сначала дорогие</option>
 		          		<option value="fat-content">по жирности</option>
 		          	</select>
-		          </fieldset>
-		          <fieldset>
 		          	<legend>Цена: 100 руб. - 500 руб.</legend>
 		          	<div class="slider-pricebar">
-		          		
+		          		<div class="slider-pricemin"></div>
+		          		<div class="slider-pricemax"></div>
 		          	</div>
-		          </fieldset>
 		          <fieldset>
 		            <legend>Жирность:</legend>
 		            <ul>
@@ -249,26 +267,7 @@
 		</div>
 	</footer>
 	<!-- modal forms -->
-	<!-- login form -->
-	<section class="modal modal-login">
-		<h2 class="visually-hidden">Личный кабинет</h2>
-	    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-	        <p>
-	          <label class="visually-hidden" for="user-email">Email</label>
-	          <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
-	        </p>
-	        <p>
-	          <label class="visually-hidden" for="user-password">Пароль</label>
-	          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
-	        </p>
-	        <button class="button" type="submit">Войти</button>
-	        <p class="login-password-info">
-	          <a class="restore" href="#">Забыли пароль?</a>
-	          <a class="registration" href="#">Новая регистрация</a>
-	        </p>	        
-	    </form>
-    </section>
-    <!-- login form -->
+
 	<!-- modal forms -->
   </body>
 </html>
