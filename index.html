@@ -29,11 +29,36 @@
 			</ul>
 		</nav>
 		<div class="header-actions">
-			<span class="search-form">Поиск</span>
-
-			<span class="login-form">Вход</span>
-			<span class="cart-form">Пусто</span>
+			<div class="main-header-search">
+				<a class="search-link" href="#">Поиск</a>
+				<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+					<label for="search" class="visually-hidden">Поиск</label>
+					<input type="text" name="search" placeholder="Что ищем?">
+				</form>
+			</div>
+			<a class="login-link" href="login.html">Вход</a>
+			<a class="cart-form" href="cart.html">Пусто</a>
 		</div>
+		<!-- login form -->
+		<section class="modal modal-login">
+			<h2 class="visually-hidden">Личный кабинет</h2>
+		    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		        <p class="login-item">
+		          <label class="visually-hidden" for="user-email">Email</label>
+		          <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+		        </p>
+		        <p class="login-item">
+		          <label class="visually-hidden" for="user-password">Пароль</label>
+		          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+		        </p>
+		        <button class="button" type="submit">Войти</button>
+		        <p class="login-password-info">
+		          <a class="restore" href="#">Забыли пароль?</a>
+		          <a class="registration" href="#">Новая регистрация</a>
+		        </p>	        
+		    </form>
+	    </section>
+	    <!-- login form -->
 		<div class="header-contacts">
 			<span class="contacts-time">С 10 до 20, ежедневно</span>
 			<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
@@ -44,10 +69,19 @@
 	<main class="container">
 		<h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
 		<div class="slider">
-			<ul>
-				<li><img src="img/slide-1.png" alt="slide_1" width="" height=""></li>
-				<li><img src="img/slide-2.png" alt="slide_2" width="" height=""></li>
-				<li><img src="img/slide-3.png" alt="slide_3" width="" height=""></li>
+			<ul class="slider-switches">
+				<li class="slide-radio">
+					<img src="img/slide-1.png" alt="slide_1" width="" height="">
+					<button class="slide-btn">Первый слайд</button>
+				</li>
+				<li class="slide-radio">
+					<img src="img/slide-2.png" alt="slide_2" width="" height="">
+					<button class="slide-btn">Второй слайд</button>
+				</li>
+				<li class="slide-radio">
+					<img src="img/slide-3.png" alt="slide_3" width="" height="">
+					<button class="slide-btn">Третий слайд</button>
+				</li>
 			</ul>
 			<a href="catalog.html" class="button">Давайте оба!</a>
 		</div>
@@ -111,8 +145,10 @@
 			</article>
 			<div class="subscription">
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<form action="" method="post">
-					<input type="email" name="email" id="email-field" value="Электронная почта">
+				<form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+					<label class="visually-hidden" for="user-email">Email</label>
+					<input type="email" name="email" id="user-email" placeholder="Электронная почта" value="">
+					<button class="button" type="submit">Отправить</button>
 				</form>
 			</div>
 		</section>
@@ -128,6 +164,26 @@
 				<a href="feedback.html" class="button">Форма обратной связи</a>
 			</div>
 		</section>
+		<!-- feedback form -->
+		<section class="modal modal-feedback">
+		<h2>Мы обязательно вам ответим!</h2>
+		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="feedback-item">
+				<label class="visually-hidden" for="feedback-name">Имя</label>
+				<input id="feedback-name" type="text" name="name" value="" placeholder="Как вас зовут?">
+			</p>
+			<p class="feedback-item">
+				<label class="visually-hidden" for="feedback-email">Email</label>
+				<input id="feedback-email" type="text" name="email" value="" placeholder="Ваша почта для ответа?">
+			</p>
+			<p class="feedback-item">
+				<textarea name="feedback-comment" id="comment-field" rows="7" cols="40" aria-label="Поле для комментария">Напишите что-нибудь...</textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
+		</section>
+		<!-- feedback form -->
 	</main>
 	<!-- content -->
 	<!-- footer -->
@@ -150,17 +206,5 @@
 		</div>
 	</footer>
 	<!-- footer -->
-	<!-- modal forms -->
-	<section class="modal modal-login">
-		<h2 class="visually-hidden">Личный кабинет</h2>
-		<!-- Здесь будет форма-->
-		<span class="modal-close">x</span>
-	</section>
-	<section class="modal modal-feedback">
-		<h2>Мы обязательно вам ответим!</h2>
-		<!-- Здесь будет форма-->
-		<span class="modal-close">x</span>
-	</section>
-	<!-- modal forms -->
   </body>
 </html>
