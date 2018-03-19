@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси - Главная</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   	<!-- header -->
@@ -13,7 +16,7 @@
 				<li class="site-navigation-item">
 					<a class="site-navigation-link" href="catalog.html">Каталог</a>
 					<ul class="catalog-navigation">
-						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="new-items.html">Новинки</a></li>
+						<li class="catalog-navigation-item"><a class="catalog-navigation-link first" href="new-items.html">Новинки</a></li>
 						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="ice-cream.html">Сливочное</a></li>
 						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="sorbet.html">Щербеты</a></li>
 						<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="fruit-ice.html">Фруктовый лед</a></li>
@@ -72,18 +75,24 @@
 			<ul class="slider-switches">
 				<li class="slide-radio">
 					<img src="img/slide-1.png" alt="slide_1" width="" height="">
-					<button class="slide-btn">Первый слайд</button>
+					<span class="slide-description">Крем-брюле и пломбир с малиновым джемом</span>
+					<a href="catalog.html" class="special-offer-button button">Давайте оба!</a>
+					<button class="slide-button">Первый слайд</button>
 				</li>
 				<li class="slide-radio">
 					<img src="img/slide-2.png" alt="slide_2" width="" height="">
-					<button class="slide-btn">Второй слайд</button>
+					<span class="slide-description">Шоколадный пломбир и лимонный сорбет</span>
+					<a href="catalog.html" class="special-offer-button button">Давайте оба!</a>
+					<button class="slide-button">Второй слайд</button>
 				</li>
 				<li class="slide-radio">
 					<img src="img/slide-3.png" alt="slide_3" width="" height="">
-					<button class="slide-btn">Третий слайд</button>
+					<span class="slide-description">Пломбир с помадкой и клубничный щербет</span>
+					<a href="catalog.html" class="special-offer-button button">Давайте оба!</a>
+					<button class="slide-button">Третий слайд</button>
 				</li>
 			</ul>
-			<a href="catalog.html" class="button">Давайте оба!</a>
+			
 		</div>
 		<section class="actions">
 			<h2 class="visually-hidden">Акции</h2>

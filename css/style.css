@@ -1,0 +1,143 @@
+/*
+focus - нажатие
+active - находимся на странице
+*/
+
+html {
+	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #fff;
+	background-color: #849d8f;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*=== Верхнее меню ===*/
+.main-header a {
+	color: #fff;
+}
+
+.site-navigation,
+.catalog-navigation {
+	line-height: 18px;
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+}
+
+.site-navigation a:hover {
+	color: #333333;
+	font-weight: 700;
+	border-bottom: none;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 5px 10px;
+	border: 1px solid rgb(255, 255, 255);
+}
+
+.site-navigation a:focus {
+	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+.site-navigation a:active {
+	background-color: #d07058;
+}
+
+.header-actions a {
+	padding: 5px 10px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contacts-time {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.contacts-phone {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.slide-description {
+	font-size: 60px;
+	line-height: 60px;
+}
+
+/*=== Кнопки ===*/
+
+.button {
+	font: inherit;
+}
+
+.special-offer-button {
+	
+}
+
+/*=== Кнопки ===*/
+
+/*
+.catalog-navigation a {
+	color: #333333;
+	font-weight: 400;
+	border-bottom: none;
+	cursor: pointer;
+}
+
+.catalog-navigation:first-child .catalog-navigation-item {
+	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.catalog-navigation-link.first {
+	font-weight: 700;
+}
+
+.catalog-navigation li:hover {
+	background-color: #fbded7;
+}
+
+.catalog-navigation a:hover {
+	font-weight: 400;
+}
+
+.catalog-navigation li:focus {
+	background-color: #f6b5a5;
+}
+
+.catalog-navigation a:focus {
+	font-weight: 400;
+}
+
+.catalog-navigation li:active {
+	background-color: #d07058;
+}
+
+.catalog-navigation a:active {
+	font-weight: 400;
+}
+
+/*=== Верхнее меню ===*/
+
+
+	font-size: ;
+	line-height: ;
+	color:
+	background-color: ;
