@@ -48,8 +48,8 @@ img {
 
 /*=== Шапка ===*/
 .main-header ul {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
 .site-navigation,
@@ -159,14 +159,17 @@ img {
 }
 /*=== Кнопки в шапке ===*/
 
-/*=== Форма входа, Форма поиска ===*/
+/*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 .modal-login,
-.search-form {
+.search-form,
+.modal-feedback {
 	background-color: #f8f7f4;
 }
 
 .login-item input,
-.search-form input {
+.search-form input,
+.feedback-item input,
+.feedback-item textarea {
 	font: inherit;
 	font-size: 14px;
 	line-height: 24px;
@@ -177,25 +180,33 @@ img {
 }
 
 .login-item input:hover,
-.search-form input:hover {
+.search-form input:hover,
+.feedback-item input:hover,
+.feedback-item textarea {
 	border-width: 2px;
 	border-color: rgb(154, 154, 154);
 	opacity: 0.52;
 }
 
 .login-item input:focus,
-.search-form input:focus {
+.search-form input:focus,
+.feedback-item input:focus,
+.feedback-item textarea {
 	border-width: 2px;
 	border-color: rgb(46, 136, 228);
 	opacity: 0.52;
 }
 
 .login-item input:active,
-.search-form input:active {
+.search-form input:active,
+.feedback-item input:active,
+.feedback-item textarea {
 	border-color: rgb(178, 178, 178);
 	opacity: 0.52;
 }
+/*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 
+/*=== Форма входа ===*/
 .login-password-info a {
 	font-size: 13px;
 	color: #323232;
@@ -210,14 +221,33 @@ img {
 } 
 /*как сделать жирным вводимые данные?*/
 /*=== Форма входа ===*/
+	
+/*=== Форма обратной связи ===*/	
+.modal-feedback h2 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #323232;
+}
+/*=== Форма обратной связи ===*/
 /*=== Шапка ===*/
 
 /*=== Слайдер ===*/
+.slider ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 .slide-description {
 	font-size: 60px;
 	line-height: 60px;
 }
 /*=== Слайдер ===*/
+
+/*=== Акции ===*/
+
+/*=== Акции ===*/
 
 /*=== Кнопки ===*/
 .button {
