@@ -17,6 +17,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #fff;
 }
 
 img {
@@ -24,8 +25,10 @@ img {
 }
 
 /*=== Шапка ===*/
-.main-header a {
-	color: #fff;
+
+.main-header ul {
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation,
@@ -35,13 +38,13 @@ img {
 }
 
 /*=== Основное меню ===*/
-.site-navigation .site-navigation-link {
+.site-navigation-link {
 	color: #fff;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	cursor: pointer;
 }
 
-.site-navigation .site-navigation-link:hover {
+.site-navigation-link:hover {
 	color: #333333;
 	font-weight: 700;
 	background-color: #fff;
@@ -50,20 +53,63 @@ img {
 	border: 1px solid rgb(255, 255, 255);
 }
 
-.site-navigation .site-navigation-link:focus {
+.site-navigation-link:focus {
 	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
-.site-navigation .site-navigation-link.active {
+.site-navigation-link.active {
 	background-color: #d07058;
 	border-radius: 20px;
 	padding: 5px 15px;
 	border: transparent;
+	color: #fff;
+	font-weight: 400;
 }
 /*=== Основное меню ===*/
 
 /*=== Выпадающее меню ===*/
+.catalog-navigation {
+	font-size: 14px;
+	line-height: 16px;
+	background-color: #fff;
+	border-radius: 5px;
+	background-color: rgb(248, 247, 244);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	width: 145px;
+}
 
+.catalog-navigation-item {
+	background: transparent;
+	padding: 10px 20px;
+}
+
+.catalog-navigation-item:hover {
+	background-color: #fbded7;
+}
+
+.catalog-navigation-item:focus {
+	background-color: #f6b5a5;
+}
+
+.catalog-navigation-item.first {
+	border-bottom: 1px solid rgba(51, 51, 51, 0.2);	
+}
+
+.catalog-navigation-item.active {
+	background-color: #d07058;
+}
+
+.catalog-navigation-link {
+	color: #323232;
+}
+
+.first .catalog-navigation-link {
+	font-weight: 700;
+}
+
+.active .catalog-navigation-link {
+	color: #fff;
+}
 /*=== Выпадающее меню ===*/
 
 /*=== Кнопки в шапке ===*/
@@ -103,45 +149,6 @@ img {
 
 /*=== Кнопки ===*/
 
-/*
-.catalog-navigation a {
-	color: #333333;
-	font-weight: 400;
-	border-bottom: none;
-	cursor: pointer;
-}
-
-.catalog-navigation:first-child .catalog-navigation-item {
-	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
-}
-
-.catalog-navigation-link.first {
-	font-weight: 700;
-}
-
-.catalog-navigation li:hover {
-	background-color: #fbded7;
-}
-
-.catalog-navigation a:hover {
-	font-weight: 400;
-}
-
-.catalog-navigation li:focus {
-	background-color: #f6b5a5;
-}
-
-.catalog-navigation a:focus {
-	font-weight: 400;
-}
-
-.catalog-navigation li:active {
-	background-color: #d07058;
-}
-
-.catalog-navigation a:active {
-	font-weight: 400;
-}
 
 /*=== Верхнее меню ===*/
 
