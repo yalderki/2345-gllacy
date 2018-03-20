@@ -3,10 +3,7 @@ focus - нажатие
 active - находимся на странице
 */
 
-html {
-	
-}
-
+/*=== Глобальные стили ===*/
 body {
 	margin: 0;
 	padding: 0;
@@ -26,7 +23,7 @@ img {
 	max-width: 100%;
 }
 
-/*=== Верхнее меню ===*/
+/*=== Шапка ===*/
 .main-header a {
 	color: #fff;
 }
@@ -37,29 +34,32 @@ img {
 	list-style: none;
 }
 
-.site-navigation a {
+/*=== Основное меню ===*/
+.site-navigation .site-navigation-link {
 	color: #fff;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	cursor: pointer;
 }
 
-.site-navigation a:hover {
+.site-navigation .site-navigation-link:hover {
 	color: #333333;
 	font-weight: 700;
-	border-bottom: none;
 	background-color: #fff;
 	border-radius: 20px;
-	padding: 5px 10px;
+	padding: 5px 15px;
 	border: 1px solid rgb(255, 255, 255);
 }
 
-.site-navigation a:focus {
+.site-navigation .site-navigation-link:focus {
 	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
-.site-navigation a:active {
+.site-navigation .site-navigation-link.active {
 	background-color: #d07058;
+	border-radius: 20px;
+	padding: 5px 15px;
 }
+/*=== Основное меню ===*/
 
 .header-actions a {
 	padding: 5px 10px;
