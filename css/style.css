@@ -58,9 +58,15 @@ img {
 	background-color: #d07058;
 	border-radius: 20px;
 	padding: 5px 15px;
+	border: transparent;
 }
 /*=== Основное меню ===*/
 
+/*=== Выпадающее меню ===*/
+
+/*=== Выпадающее меню ===*/
+
+/*=== Кнопки в шапке ===*/
 .header-actions a {
 	padding: 5px 10px;
 	border-radius: 20px;
@@ -76,14 +82,17 @@ img {
 	font-size: 22px;
 	line-height: 24px;
 }
+/*=== Кнопки в шапке ===*/
+/*=== Шапка ===*/
 
+/*=== Слайдер ===*/
 .slide-description {
 	font-size: 60px;
 	line-height: 60px;
 }
+/*=== Слайдер ===*/
 
 /*=== Кнопки ===*/
-
 .button {
 	font: inherit;
 }
