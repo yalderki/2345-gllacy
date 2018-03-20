@@ -157,16 +157,16 @@ img {
 	font-size: 22px;
 	line-height: 24px;
 }
-
-
 /*=== Кнопки в шапке ===*/
 
-/*=== Форма входа ===*/
-.modal-login {
+/*=== Форма входа, Форма поиска ===*/
+.modal-login,
+.search-form {
 	background-color: #f8f7f4;
 }
 
-.login-item input {
+.login-item input,
+.search-form input {
 	font: inherit;
 	font-size: 14px;
 	line-height: 24px;
@@ -176,19 +176,22 @@ img {
 	border-radius: 5px;
 }
 
-.login-item input:hover {
+.login-item input:hover,
+.search-form input:hover {
 	border-width: 2px;
 	border-color: rgb(154, 154, 154);
 	opacity: 0.52;
 }
 
-.login-item input:focus {
+.login-item input:focus,
+.search-form input:focus {
 	border-width: 2px;
 	border-color: rgb(46, 136, 228);
 	opacity: 0.52;
 }
 
-.login-item input:active {
+.login-item input:active,
+.search-form input:active {
 	border-color: rgb(178, 178, 178);
 	opacity: 0.52;
 }
@@ -203,7 +206,7 @@ img {
 .login-password-info a:focus,
 .login-password-info a:active {
 	color: #e84d37;
-	border-bottom: 1px solid rgba(232, 77, 55, 0.2);
+	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
 } 
 /*как сделать жирным вводимые данные?*/
 /*=== Форма входа ===*/
