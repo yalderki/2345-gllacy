@@ -18,14 +18,35 @@ body {
 a {
 	text-decoration: none;
 	color: #fff;
+	font-weight: 500;
+	line-height: 18px;
 }
 
 img {
 	max-width: 100%;
 }
 
-/*=== Шапка ===*/
+.button {
+	font: inherit;
+	vertical-align: middle;
+	text-align: center;
+	border: none;
+	color: #fff;
+}
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+/*=== Глобальные стили ===*/
+
+/*=== Шапка ===*/
 .main-header ul {
 	margin: 0;
 	padding: 0;
@@ -94,7 +115,7 @@ img {
 .catalog-navigation-item.first {
 	border-bottom: 1px solid rgba(51, 51, 51, 0.2);	
 }
-
+/*как настроить отступы для подчеркивания по краям?*/
 .catalog-navigation-item.active {
 	background-color: #d07058;
 }
@@ -117,6 +138,14 @@ img {
 	padding: 5px 10px;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.header-actions a:hover {
+	color: #323232;
+	background-color: rgb(248, 247, 244);
 }
 
 .contacts-time {
@@ -128,7 +157,56 @@ img {
 	font-size: 22px;
 	line-height: 24px;
 }
+
+
 /*=== Кнопки в шапке ===*/
+
+/*=== Форма входа ===*/
+.modal-login {
+	background-color: #f8f7f4;
+}
+
+.login-item input {
+	font: inherit;
+	font-size: 14px;
+	line-height: 24px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(211, 211, 210);
+	border-radius: 5px;
+}
+
+.login-item input:hover {
+	border-width: 2px;
+	border-color: rgb(154, 154, 154);
+	opacity: 0.52;
+}
+
+.login-item input:focus {
+	border-width: 2px;
+	border-color: rgb(46, 136, 228);
+	opacity: 0.52;
+}
+
+.login-item input:active {
+	border-color: rgb(178, 178, 178);
+	opacity: 0.52;
+}
+
+.login-password-info a {
+	font-size: 13px;
+	color: #323232;
+	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.login-password-info a:hover,
+.login-password-info a:focus,
+.login-password-info a:active {
+	color: #e84d37;
+	border-bottom: 1px solid rgba(232, 77, 55, 0.2);
+} 
+/*как сделать жирным вводимые данные?*/
+/*=== Форма входа ===*/
 /*=== Шапка ===*/
 
 /*=== Слайдер ===*/
@@ -141,7 +219,26 @@ img {
 /*=== Кнопки ===*/
 .button {
 	font: inherit;
+	background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
+
+
+
+.special-offer-button:hover {
+	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.special-offer-button:focus {
+	background-image: -webkit-linear-gradient(left, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+	background-image: -o-linear-gradient(left, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+	background-image: linear-gradient(to right, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+}	
 
 .special-offer-button {
 	
@@ -152,8 +249,7 @@ img {
 
 /*=== Верхнее меню ===*/
 
-
-	font-size: ;
-	line-height: ;
-	color:
-	background-color: ;
+/*цвета
+a:hover, a:focus {
+	color: #ffbc9e;
+}*/
