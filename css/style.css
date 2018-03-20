@@ -27,11 +27,12 @@ img {
 }
 
 .button {
-	font: inherit;
+	font-weight: 700;
 	vertical-align: middle;
 	text-align: center;
 	border: none;
 	color: #fff;
+	background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
 
 .visually-hidden {
@@ -184,8 +185,7 @@ img {
 .feedback-item input:hover,
 .feedback-item textarea {
 	border-width: 2px;
-	border-color: rgb(154, 154, 154);
-	opacity: 0.52;
+	border-color: rgb(154, 154, 154, 0.52);
 }
 
 .login-item input:focus,
@@ -193,16 +193,14 @@ img {
 .feedback-item input:focus,
 .feedback-item textarea {
 	border-width: 2px;
-	border-color: rgb(46, 136, 228);
-	opacity: 0.52;
+	border-color: rgb(46, 136, 228, 0.52);
 }
 
 .login-item input:active,
 .search-form input:active,
 .feedback-item input:active,
 .feedback-item textarea {
-	border-color: rgb(178, 178, 178);
-	opacity: 0.52;
+	border-color: rgb(178, 178, 178, 0.52);
 }
 /*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 
@@ -246,20 +244,72 @@ img {
 /*=== Слайдер ===*/
 
 /*=== Акции ===*/
-
-/*=== Акции ===*/
-
-/*=== Кнопки ===*/
-.button {
-	font: inherit;
-	background-image: -webkit-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	background-image: -o-linear-gradient(left, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+.action-first {
+	background-color: #611223; 
+	background-image: url('../img/action-first.jpg');
 }
 
+.action-second {
+	background-color: #43281c; 
+	background-image: url('../img/action-second.jpg');
+}
 
+.action-name {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 41px;
+}
 
-.special-offer-button:hover {
+.action-description {
+	font-weight: 700;
+	font-size: 18px;
+}
+/*=== Акции ===*/
+
+/*=== Популярные товары ===*/
+.popular-items ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.popular-item {
+	background: transparent;
+}
+
+.popular-item:hover {
+	border-radius: 5px;
+	background-color: rgb(254, 254, 254, 0.2);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.popular-label {
+	background-image: url('../img/popular-label.png');
+}
+
+.popular-price {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.popular-price-type {
+	font-size: 30px;
+}
+
+.popular-link {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	line-height: 22px;
+}
+
+.popular-quick-look.button {
+	font-size: 18px;
+	line-height: 24px;
+}
+/*=== Популярные товары ===*/
+
+/*=== Кнопки ===*/
+/*.special-offer-button:hover {
 	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
