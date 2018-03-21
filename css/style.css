@@ -67,7 +67,7 @@ button {
 /*=== Основное меню ===*/
 .site-navigation-link {
 	color: #fff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 	cursor: pointer;
 }
 
@@ -543,5 +543,31 @@ button {
 	line-height: 18px;
 }
 /*=== Корзина с товарами ===*/
+
+/*=== Хлебные крошки ===*/
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs a {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: #ffbc9e;
+}
+
+.breadcrumbs-current {
+	font-size: 14px;
+	line-height: 16px;
+}
+/*=== Хлебные крошки ===*/
+
 /*=== Каталог ===*/
 
