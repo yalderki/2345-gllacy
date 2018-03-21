@@ -323,25 +323,25 @@ img {
 /*=== Популярные товары ===*/
 
 /*=== Контент ===*/
-.content {
+.presentation {
 	background-image: url('../img/waffle.jpg');
 	border-radius: 20px;
 }
 
-.content span,
-.content p,
+.presentation span,
+.presentation p,
 .blog-preview span, 
 .blog-preview a {
 	color: #323232;
 }
 
-.content span {
+.presentation span {
 	font-weight: 500;
 	font-size:24px;
 	line-height: 30px;
 }
 
-/*=== Интересное ===*/
+/*=== Блог ===*/
 .blog-preview {
 	background-image: url('../img/blog-image.jpg');
 	border-radius: 20px;
@@ -364,7 +364,7 @@ img {
 	color: #e84d37;
 	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
 }
-/*=== Интересное ===*/
+/*=== Блог ===*/
 
 /*=== Подписка ===*/
 .subscription {
@@ -405,6 +405,30 @@ img {
 }
 /*=== Подписка ===*/
 /*=== Контент ===*/
+
+/*=== Контакты ===*/
+.footer-contacts {
+	background-color: #cddfbe;
+}
+
+.footer-contacts-data {
+	background-color: #fff;
+	border-radius: 20px;
+	color: #323232;
+}
+
+.footer-address-description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.footer-address-item {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+}
+/*=== Контакты ===*/
 
 /*=== Кнопки ===*/
 /*.special-offer-button:hover {
