@@ -31,6 +31,7 @@ img {
 	vertical-align: middle;
 	text-align: center;
 	border: none;
+	border-radius: 20px;
 	color: #fff;
 	background-image: linear-gradient(to right, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
@@ -252,11 +253,13 @@ img {
 .action-first {
 	background-color: #611223; 
 	background-image: url('../img/action-first.jpg');
+	border-radius: 20px;
 }
 
 .action-second {
 	background-color: #43281c; 
 	background-image: url('../img/action-second.jpg');
+	border-radius: 20px;
 }
 
 .action-name {
@@ -290,6 +293,11 @@ img {
 
 .popular-label {
 	background-image: url('../img/popular-label.png');
+	border-radius: 20px;
+}
+
+.popular-photo {
+	border-radius: 50%;
 }
 
 .popular-price {
@@ -313,6 +321,90 @@ img {
 	line-height: 24px;
 }
 /*=== Популярные товары ===*/
+
+/*=== Контент ===*/
+.content {
+	background-image: url('../img/waffle.jpg');
+	border-radius: 20px;
+}
+
+.content span,
+.content p,
+.blog-preview span, 
+.blog-preview a {
+	color: #323232;
+}
+
+.content span {
+	font-weight: 500;
+	font-size:24px;
+	line-height: 30px;
+}
+
+/*=== Интересное ===*/
+.blog-preview {
+	background-image: url('../img/blog-image.jpg');
+	border-radius: 20px;
+}
+
+.blog-preview span {
+	font-weight: 500;
+}
+
+.blog-preview a {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.blog-preview a:hover,
+.blog-preview a:active,
+.blog-preview a:focus {
+	color: #e84d37;
+	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
+}
+/*=== Интересное ===*/
+
+/*=== Подписка ===*/
+.subscription {
+	background-color: #f8f7f4;
+	border-radius: 20px;
+}
+
+.subscription p {
+	color: #5a5a5a;
+}
+
+.subscription-form {
+	background-color: #f8f7f4;
+}
+
+.subscription-form input {
+	font: inherit;
+	font-size: 14px;
+	line-height: 24px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(211, 211, 210);
+	border-radius: 5px;
+}
+
+.subscription-form input:hover {
+	border-width: 2px;
+	border-color: rgb(154, 154, 154, 0.52);
+}
+
+.subscription-form input:focus {
+	border-width: 2px;
+	border-color: rgb(46, 136, 228, 0.52);
+}
+
+.subscription-form input:active {
+	border-color: rgb(178, 178, 178, 0.52);
+}
+/*=== Подписка ===*/
+/*=== Контент ===*/
 
 /*=== Кнопки ===*/
 /*.special-offer-button:hover {
