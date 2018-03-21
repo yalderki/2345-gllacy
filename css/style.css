@@ -569,5 +569,49 @@ button {
 }
 /*=== Хлебные крошки ===*/
 
+/*=== Фильтры ===*/
+.filter fieldset {
+	border: none;
+}
+
+.filter-name,
+.filter legend {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filter select {
+	color: #fff;
+	font-weight: 500;
+	line-height: 18px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+}
+
+.filter select:hover {
+	color: #323232;
+}
+
+.filter ul {
+	list-style: none;
+	font-weight: 500;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.sorting,
+.slider-pricebar {
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.filter-input:hover + label {
+  color: #323232;
+}
+
+/*=== Фильтры ===*/
+
 /*=== Каталог ===*/
 
