@@ -581,9 +581,12 @@ button {
 	line-height: 16px;
 }
 
-.filter select {
+.filter select,
+.slider-pricebar,
+.filter-button {
 	color: #fff;
 	font-weight: 500;
+	font-size: 16px;
 	line-height: 18px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
@@ -591,6 +594,15 @@ button {
 
 .filter select:hover {
 	color: #323232;
+}
+
+.filter-wrapper {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
 }
 
 .filter ul {
@@ -601,16 +613,28 @@ button {
 	padding: 0;
 }
 
-.sorting,
-.slider-pricebar {
-	font-weight: 500;
-	line-height: 18px;
-}
-
 .filter-input:hover + label {
   color: #323232;
 }
 
+.filter-button {
+	background-image: none;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(255, 255, 255);
+	padding: 7px 25px;
+}
+
+.filter-button:hover {
+	background-color: #fff;
+	color: #323232;
+}
+
+.filter-button:focus {
+	background-color: rgb(237, 237, 237);
+	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+	border: none;
+}
 /*=== Фильтры ===*/
 
 
