@@ -613,5 +613,53 @@ button {
 
 /*=== Фильтры ===*/
 
+
+/*=== Каталог товаров ===*/
+.catalog-items ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog-item {
+	background: transparent;
+}
+
+.catalog-item:hover {
+	border-radius: 5px;
+	background-color: rgb(254, 254, 254, 0.2);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-label {
+	background-image: url('../img/popular-label.png');
+	border-radius: 20px;
+}
+
+.catalog-photo {
+	border-radius: 50%;
+}
+
+.catalog-price {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.catalog-price-type {
+	font-size: 30px;
+}
+
+.catalog-link {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	line-height: 22px;
+	text-align: center;
+}
+
+.catalog-quick-look.button {
+	font-size: 18px;
+	line-height: 24px;
+}
+/*=== Каталог товаров ===*/
 /*=== Каталог ===*/
 
