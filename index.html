@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси - Главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-  	<div class="wrapper">
-	  	<!-- header -->
-		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-header-logo"><img src="img/logo.svg" alt="logo" width="154px" height="64px"></a>
-				<ul class="site-navigation">
-					<li class="site-navigation-item">
-						<a class="site-navigation-link" href="catalog.html">Каталог</a>
-						<ul class="catalog-navigation">
-							<li class="catalog-navigation-item first"><a class="catalog-navigation-link" href="new-items.html">Новинки</a></li>
-							<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="ice-cream.html">Сливочное</a></li>
-							<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="sorbet.html">Щербеты</a></li>
-							<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="fruit-ice.html">Фруктовый лед</a></li>
-							<li class="catalog-navigation-item last"><a class="catalog-navigation-link" href="melorin.html">Мелорин</a></li>
-						</ul>
-					</li>
-					<li class="site-navigation-item">
-						<a class="site-navigation-link" href="delivery.html">Доставка и оплата</a>
-					</li>
-					<li class="site-navigation-item">
-						<a class="site-navigation-link" href="about.html">О Компании</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header-actions">
-				<div class="main-header-search">
-					<a class="search-link" href="#">Поиск</a>
-					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-						<label for="search" class="visually-hidden">Поиск</label>
-						<input type="text" name="search" placeholder="Что ищем?">
-					</form>
+	<head>
+	    <meta charset="utf-8">
+	    <title>HTML Academy: Глейси - Главная</title>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+  		<div class="wrapper">
+	  		<!-- header -->
+			<header class="main-header">
+				<nav class="main-navigation">
+					<a class="main-header-logo"><img src="img/logo.svg" alt="logo" width="154px" height="64px"></a>
+					<ul class="site-navigation">
+						<li class="site-navigation-item">
+							<a class="site-navigation-link" href="catalog.html">Каталог</a>
+							<ul class="catalog-navigation">
+								<li class="catalog-navigation-item first"><a class="catalog-navigation-link" href="new-items.html">Новинки</a></li>
+								<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="ice-cream.html">Сливочное</a></li>
+								<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="sorbet.html">Щербеты</a></li>
+								<li class="catalog-navigation-item"><a class="catalog-navigation-link" href="fruit-ice.html">Фруктовый лед</a></li>
+								<li class="catalog-navigation-item last"><a class="catalog-navigation-link" href="melorin.html">Мелорин</a></li>
+							</ul>
+						</li>
+						<li class="site-navigation-item">
+							<a class="site-navigation-link" href="delivery.html">Доставка и оплата</a>
+						</li>
+						<li class="site-navigation-item">
+							<a class="site-navigation-link" href="about.html">О Компании</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-actions">
+					<div class="main-header-search">
+						<a class="search-link" href="#">Поиск</a>
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<label for="search" class="visually-hidden">Поиск</label>
+							<input type="text" name="search" placeholder="Что ищем?">
+						</form>
+					</div>
+					<a class="login-link" href="login.html">Вход</a>
+					<a class="cart-form" href="cart.html">Пусто</a>
 				</div>
-				<a class="login-link" href="login.html">Вход</a>
-				<a class="cart-form" href="cart.html">Пусто</a>
-			</div>
-			<!-- login form -->
-			<section class="modal modal-login">
-				<h2 class="visually-hidden">Личный кабинет</h2>
-			    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-			        <p class="login-item">
-			          <label class="visually-hidden" for="user-email">Email</label>
-			          <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
-			        </p>
-			        <p class="login-item">
-			          <label class="visually-hidden" for="user-password">Пароль</label>
-			          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
-			        </p>
-			        <button class="button" type="submit">Войти</button>
-			        <p class="login-password-info">
-			          <a class="restore" href="#">Забыли пароль?</a>
-			          <a class="registration" href="#">Новая регистрация</a>
-			        </p>	        
-			    </form>
-		    </section>
-		    <!-- login form -->
-			<div class="header-contacts">
-				<span class="contacts-time">С 10 до 20, ежедневно</span>
-				<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
-			</div> 
-		</header>
+				<!-- login form -->
+				<section class="modal modal-login">
+					<h2 class="visually-hidden">Личный кабинет</h2>
+				    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				        <p class="login-item">
+				          <label class="visually-hidden" for="user-email">Email</label>
+				          <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+				        </p>
+				        <p class="login-item">
+				          <label class="visually-hidden" for="user-password">Пароль</label>
+				          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+				        </p>
+				        <button class="button" type="submit">Войти</button>
+				        <p class="login-password-info">
+				          <a class="restore" href="#">Забыли пароль?</a>
+				          <a class="registration" href="#">Новая регистрация</a>
+				        </p>	        
+				    </form>
+			    </section>
+			    <!-- login form -->
+				<div class="header-contacts">
+					<span class="contacts-time">С 10 до 20, ежедневно</span>
+					<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
+				</div> 
+			</header>
 		<!-- header -->
 		<!-- content -->
 <!-- 		<main class="container">
@@ -175,7 +175,7 @@
 			<section class="footer-contacts">
 				<h2 class="visually-hidden">Контактные данные</h2>
 				<img src="http://placehold.it/1146x430" alt="">
-				<div class="footer-wrapper">
+				<div class="footer-contacts-wrapper">
 					<div class="footer-address">
 						<div class="footer-address-description">Адрес главного офиса<br> и офлайн-магазина:</div>
 						<div class="footer-address-item">ул. Большая Конюшенная 19/8,<br> Санкт-Петербург</div>
@@ -220,14 +220,14 @@
 				<li><a class="social-button vk" href="https://vk.com" target="_blank">VK</a></li>
 			</ul>
 			<ul class="footer-navigation">
-				<li><a class="first" href="for-dealers.html">Для поставщиков</a></li>
-				<li><a href="production.html">О производстве</a></li>
+				<li class="first"><a href="for-dealers.html">Для поставщиков</a></li>
 				<li><a href="documents.html">Наши документы</a></li>
+				<li><a href="production.html">О производстве</a></li>
 				<li><a href="eco-standarts.html">Экологические стандарты</a></li>
 			</ul>
 			<div class="footer-copyright">
-				<img src="img/logo-htmlacademy-small.svg" alt="" width="110px" height="40px">
-				<span>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> &copy; 2017</span>
+				<img src="img/logo-htmlacademy-small.svg" alt="" width="130px" height="40px">
+				<div>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML&nbsp;Academy</a> &copy;&nbsp;2017</div>
 			</div>
 		</footer>
 		<!-- footer -->
