@@ -530,26 +530,42 @@ button {
 /*=== Контент ===*/
 
 /*=== Контакты ===*/
-.footer-contacts {
-	background-color: #cddfbe;
-}
-
-.footer-contacts-data {
+.footer-wrapper {
+	width: 360px;
+	float: right;
 	background-color: #fff;
 	border-radius: 20px;
 	color: #323232;
+	padding: 30px 25px;
+	box-sizing: border-box;
+}
+
+.footer-address {
+	margin-bottom: 20px;
+}
+
+.footer-phone {
+	margin-bottom: 25px;
 }
 
 .footer-address-description {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
+	margin-bottom: 10px;
 }
 
 .footer-address-item {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.footer-wrapper .button {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
 }
 /*=== Контакты ===*/
 
