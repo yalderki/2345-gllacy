@@ -422,16 +422,21 @@ button {
 .presentation {
 	background-image: url('../img/waffle.jpg');
 	border-radius: 20px;
+	margin-bottom: 40px;
 }
 
-.presentation span,
-.presentation p,
+.presentation-wrapper {
+	padding: 30px 20px;
+}
+
+.presentation-wrapper span,
+.presentation-wrapper p,
 .blog-preview span, 
 .blog-preview a {
 	color: #323232;
 }
 
-.presentation span {
+.presentation-wrapper span {
 	font-weight: 500;
 	font-size:24px;
 	line-height: 30px;
