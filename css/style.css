@@ -423,40 +423,49 @@ button {
 	background-image: url('../img/waffle.jpg');
 	border-radius: 20px;
 	margin-bottom: 40px;
-}
-
-.presentation-wrapper {
+	box-sizing: border-box;
 	padding: 30px 20px;
 }
 
-.presentation-wrapper span,
-.presentation-wrapper p,
+.presentation span,
+.presentation p,
 .blog-preview span, 
 .blog-preview a {
 	color: #323232;
 }
 
-.presentation-wrapper span {
+.presentation span {
 	font-weight: 500;
 	font-size:24px;
 	line-height: 30px;
 }
 
 /*=== Блог ===*/
+.blog {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
 .blog-preview {
 	background-image: url('../img/blog-image.jpg');
 	border-radius: 20px;
+	width: 560px;
+	box-sizing: border-box;
+	padding: 25px 20px;
 }
 
 .blog-preview span {
 	font-weight: 500;
+	display: block;
+	margin-bottom: 10px;
 }
 
 .blog-preview a {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 30px;
-	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+	border-bottom: 2px solid rgb(50, 50, 50);
 }
 
 .blog-preview a:hover,
@@ -471,17 +480,24 @@ button {
 .subscription {
 	background-color: #f8f7f4;
 	border-radius: 20px;
+	width: 560px;
+	box-sizing: border-box;
+	padding: 25px 20px;
 }
 
 .subscription p {
 	color: #5a5a5a;
+/*	margin-bottom: 40px;*/
 }
 
 .subscription-form {
 	background-color: #f8f7f4;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.subscription-form input {
+.subscription-item input {
 	font: inherit;
 	font-size: 14px;
 	line-height: 24px;
@@ -489,20 +505,26 @@ button {
 	border-width: 1px;
 	border-color: rgb(211, 211, 210);
 	border-radius: 5px;
+	width: 365px;
+	padding: 7px;
 }
 
-.subscription-form input:hover {
+.subscription-item input:hover {
 	border-width: 2px;
-	border-color: rgb(154, 154, 154, 0.52);
+	border-color: rgba(154, 154, 154, 0.52);
 }
 
-.subscription-form input:focus {
+.subscription-item input:focus {
 	border-width: 2px;
-	border-color: rgb(46, 136, 228, 0.52);
+	border-color: rgba(46, 136, 228, 0.52);
 }
 
-.subscription-form input:active {
-	border-color: rgb(178, 178, 178, 0.52);
+.subscription- input:active {
+	border-color: rgba(178, 178, 178, 0.52);
+}
+
+.subscription-item + .button {
+	display: inline;
 }
 /*=== Подписка ===*/
 /*=== Контент ===*/
