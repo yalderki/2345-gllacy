@@ -225,7 +225,8 @@ button {
 
 /*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 .modal-login,
-.search-form {
+.search-form,
+.modal-feedback {
 	display: none;
 }
 
@@ -530,6 +531,10 @@ button {
 /*=== Контент ===*/
 
 /*=== Контакты ===*/
+.footer-contacts {
+	position: relative;
+}
+
 .footer-wrapper {
 	width: 360px;
 	float: right;
@@ -538,6 +543,9 @@ button {
 	color: #323232;
 	padding: 30px 25px;
 	box-sizing: border-box;
+	position: absolute;
+	right: 0px;
+	top: 60px;
 }
 
 .footer-address {
