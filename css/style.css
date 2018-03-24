@@ -320,6 +320,7 @@ button {
 .actions {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
 .action-first,
@@ -359,15 +360,25 @@ button {
 /*=== Акции ===*/
 
 /*=== Популярные товары ===*/
+.popular-items {
+	margin-bottom: 40px;
+}
+
 .popular-items ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
 }
 
 /*.popular-item {
 	background: transparent;
 }*/
+
+.popular-item {
+	width: 267px;
+}
 
 .popular-item:hover {
 	border-radius: 5px;
@@ -403,6 +414,7 @@ button {
 .popular-quick-look.button {
 	font-size: 18px;
 	line-height: 24px;
+	display: none;
 }
 /*=== Популярные товары ===*/
 
