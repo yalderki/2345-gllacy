@@ -123,6 +123,10 @@ background-position: top center; */
 	justify-content: space-between;
 }
 
+.site-navigation-item.first:hover .catalog-navigation {
+	display: block;
+}
+
 .site-navigation,
 .catalog-navigation {
 	line-height: 18px;
@@ -223,7 +227,6 @@ background-position: top center; */
 	display: flex;
 	width: 560px;
 	justify-content: flex-end;
-
 	align-items: center;
 }
 
@@ -312,6 +315,20 @@ background-position: top center; */
 .feedback-item textarea {
 	border-color: rgb(178, 178, 178, 0.52);
 }
+
+.search-link,
+.login-link {
+	position: relative;
+}
+
+.search-link:hover .search-form {
+	display: block;
+}
+
+.login-link:hover .modal-login {
+	display: block;
+}
+
 /*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 
 /*=== Форма входа ===*/
