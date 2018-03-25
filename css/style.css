@@ -813,10 +813,21 @@ footer {
 
 
 /*=== Каталог товаров ===*/
+.catalog-items {
+	margin-bottom: 40px;
+}
+
 .catalog-items ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.catalog-item {
+	width: 267px;
 }
 
 /*.catalog-item {
@@ -857,8 +868,10 @@ footer {
 .catalog-quick-look.button {
 	font-size: 18px;
 	line-height: 24px;
+	display: none;
 }
-/*=== Каталог товаров ===*/
+/* === Каталог товаров ===
+
 
 /*=== Пагинация ===*/
 .pagination-list {
