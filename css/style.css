@@ -74,15 +74,15 @@ button {
 .wrapper {
 	margin: 0 auto;
 	padding: 0 27px;
-	transition: background-image 0.5s ease, background-color 0.5s ease;
-	min-width: 940px;
-	background-color: #849d8f;
-	background-image: url("../img/slide-1.png");
-	background-repeat: no-repeat;
-	background-position: top center;
+/* 	transition: background-image 0.5s ease, background-color 0.5s ease;
+min-width: 940px;
+background-color: #849d8f;
+background-image: url("../img/slide-1.png");
+background-repeat: no-repeat;
+background-position: top center; */
 }
 
-.wrapper::before,
+/* .wrapper::before,
 .wrapper::after {
   content: "";
 
@@ -95,7 +95,7 @@ button {
 
 .wrapper::after {
   background-image: url("../img/slider-item3.png");
-}
+} */
 
 /*=== Шапка ===*/
 .main-header {
@@ -349,7 +349,7 @@ button {
   	color: #ffffff;
 }
 
-.slider-controls {
+/* .slider-controls {
 	position: absolute;
 	bottom: 63px;
 	left: 0;
@@ -394,7 +394,7 @@ button {
 #product-2:checked ~ .wrapper label[for="product-2"],
 #product-3:checked ~ .wrapper label[for="product-3"] {
   background-color: #ffffff;
-}
+} */
 
 .slider ul {
 	padding: 0;
