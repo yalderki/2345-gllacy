@@ -619,16 +619,16 @@ footer {
 /*=== Социальные сети ===*/
 
 /*=== Ссылки в футере ===*/
+.footer-navigation-wrapper {
+	display: flex;
+	flex-wrap: wrap;	
+}
+
 .footer-navigation {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.footer-navigation li {
-	width: 170px;
+	margin-right: 25px;
 }
 
 .footer-navigation a {
