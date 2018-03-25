@@ -4,9 +4,9 @@ active - находимся на странице
 */
 
 /*=== Глобальные стили ===*/
-* {
+/* * {
 	outline: 1px solid purple;
-}
+} */
 
 body {
 	margin: 0 auto;
@@ -736,6 +736,7 @@ footer {
 	justify-content: stretch;
 	align-items: center;
 	padding: 25px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
 /*=== Социальные сети ===*/
 .social-links {
@@ -905,6 +906,13 @@ footer {
 /*=== Хлебные крошки ===*/
 
 /*=== Фильтры ===*/
+.filter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 .filter fieldset {
 	border: none;
 }
@@ -931,6 +939,14 @@ footer {
 	color: #323232;
 }
 
+.fatness {
+	width: 410px;
+}
+
+.fillings {
+	width: 700px;
+}
+
 .filter-wrapper {
 	color: #fff;
 	font-weight: 500;
@@ -938,14 +954,13 @@ footer {
 	line-height: 18px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
-}
-
-.filter ul {
 	list-style: none;
-	font-weight: 500;
-	line-height: 18px;
 	margin: 0;
 	padding: 0;
+}
+
+.filter-wrapper li {
+	display: inline;
 }
 
 .filter-input:hover + label {
@@ -975,7 +990,7 @@ footer {
 
 /*=== Каталог товаров ===*/
 .catalog-items {
-	margin-bottom: 40px;
+	margin-bottom: 75px;
 }
 
 .catalog-items ul {
@@ -1039,6 +1054,12 @@ footer {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+	align-items: flex-end;
+}
+
+.pagination-list li {
+	display: inline-block;
 }
 
 .pagination-list a {
@@ -1050,7 +1071,6 @@ footer {
 	width: 25px;
 	padding-top: 4px;
 	padding-bottom: 2px; 
-/*	background-color: transparent;*/
 	border-radius: 50%;
 }
 
