@@ -74,6 +74,27 @@ button {
 .wrapper {
 	margin: 0 auto;
 	padding: 0 27px;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+	min-width: 940px;
+	background-color: #849d8f;
+	background-image: url("../img/slide-1.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.wrapper::before {
+  background-image: url("../img/slider-item2.png");
+}
+
+.wrapper::after {
+  background-image: url("../img/slider-item3.png");
 }
 
 /*=== Шапка ===*/
@@ -86,7 +107,7 @@ button {
 	display: flex;
 	align-items: center;
 	width: 560px;
-}
+} 
 
 .main-navigation>a {
 	margin-right: 32px;
@@ -108,9 +129,9 @@ button {
 	list-style: none;
 }
 
-.site-navigation li {
+/* .site-navigation li {
 	margin-right: 25px;
-}
+} */
 
 /*=== Основное меню ===*/
 .site-navigation-link {
@@ -322,6 +343,57 @@ button {
 /*=== Слайдер ===*/
 .slider {
 	margin-bottom: 40px;
+	position: relative;
+ 	padding-top: 321px;
+    text-align: center;
+  	color: #ffffff;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 63px;
+	left: 0;
+	z-index: 20;
+	font-size: 0;
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#product-1:checked ~ .wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+}
+
+#product-2:checked ~ .wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slide-2.png");
+}
+
+#product-3:checked ~ .wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slide-3.png");
+}
+
+#product-1:checked ~ .wrapper #slide1,
+#product-2:checked ~ .wrapper #slide2,
+#product-3:checked ~ .wrapper #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .wrapper label[for="product-1"],
+#product-2:checked ~ .wrapper label[for="product-2"],
+#product-3:checked ~ .wrapper label[for="product-3"] {
+  background-color: #ffffff;
 }
 
 .slider ul {
@@ -330,10 +402,54 @@ button {
 	list-style: none;
 }
 
+.slider-switches {
+	margin: 0;
+	padding: 0;
+  	list-style: none;
+}
+
+.slide {
+  display: none;
+}
+
 .slide-description {
 	font-size: 60px;
 	line-height: 60px;
 	text-align: center;
+	
+	width: 700px;
+	margin: 0 auto;
+  	margin-bottom: 27px;
+    font-weight: 800;
+}
+
+.special-offer-button {
+	display: inline-block;
+	padding: 12px 44px;
+	font-weight: 600;
+	font-size: 31px;
+	line-height: 41px;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: top;
+	text-decoration: none;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	background: #f26843;
+	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	border-radius: 50px;
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
+	cursor: pointer;
+}
+
+.special-offer-button:hover {
+	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.special-offer-button:active {
+	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 /*=== Слайдер ===*/
 
