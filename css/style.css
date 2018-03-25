@@ -723,6 +723,13 @@ footer {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.breadcrumbs li {
+	margin-right: 20px;
 }
 
 .breadcrumbs a {
@@ -737,9 +744,10 @@ footer {
 	color: #ffbc9e;
 }
 
-.breadcrumbs-current {
+.breadcrumbs-current span {
 	font-size: 14px;
 	line-height: 16px;
+	border-bottom: 1px solid transparent;
 }
 /*=== Хлебные крошки ===*/
 
