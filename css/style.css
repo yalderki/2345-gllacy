@@ -77,11 +77,6 @@ button {
 }
 
 /*=== Шапка ===*/
-.main-header ul {
-	padding: 0;
-	margin: 0;
-}
-
 .main-header {
 	display: flex;
 	justify-content: space-between;
@@ -89,8 +84,17 @@ button {
 
 .main-navigation {
 	display: flex;
+	align-items: center;
 	width: 560px;
-	justify-content: space-between;
+}
+
+.main-navigation>a {
+	margin-right: 32px;
+}
+
+.main-navigation ul {
+	padding: 0;
+	margin: 0;
 }
 
 .site-navigation {
@@ -102,6 +106,10 @@ button {
 .catalog-navigation {
 	line-height: 18px;
 	list-style: none;
+}
+
+.site-navigation li {
+	margin-right: 25px;
 }
 
 /*=== Основное меню ===*/
@@ -192,6 +200,10 @@ button {
 /*=== Кнопки в шапке ===*/
 .header-actions {
 	display: flex;
+	width: 560px;
+	justify-content: flex-end;
+
+	align-items: center;
 }
 
 .header-actions a {
@@ -201,6 +213,7 @@ button {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
+	margin-left: 10px;
 }
 
 .header-actions a:hover {
@@ -208,13 +221,20 @@ button {
 	background-color: rgb(248, 247, 244);
 }
 
+.header-contacts-wrapper {
+	display: relative;
+}
+
 .header-contacts {
 	text-align: right;
+	display: absolute;
 }
 
 .contacts-time {
 	font-size: 14px;
 	line-height: 16px;
+	display: block;
+	margin-bottom: 10px;
 }
 
 .contacts-phone {
