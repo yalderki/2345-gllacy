@@ -123,8 +123,14 @@ background-position: top center; */
 	justify-content: space-between;
 }
 
+.site-navigation-item.first {
+	display: relative;
+}
+
 .site-navigation-item.first:hover .catalog-navigation {
 	display: block;
+	position: absolute;
+	top: 50px;
 }
 
 .site-navigation,
@@ -230,7 +236,7 @@ background-position: top center; */
 	align-items: center;
 }
 
-.header-actions a {
+.header-actions>a {
 	padding: 5px 10px;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -240,7 +246,7 @@ background-position: top center; */
 	margin-left: 10px;
 }
 
-.header-actions a:hover {
+.header-actions>a:hover {
 	color: #323232;
 	background-color: rgb(248, 247, 244);
 }
@@ -316,31 +322,83 @@ background-position: top center; */
 	border-color: rgb(178, 178, 178, 0.52);
 }
 
-.search-link,
+/* .search-link,
 .login-link {
 	position: relative;
-}
+} */
 
-.search-link:hover .search-form {
+.main-header-search:hover .search-form {
 	display: block;
+	position: absolute;
+	top: 50px;
 }
 
-.login-link:hover .modal-login {
+.search-form {
+	padding: 20px 15px;
+	border-radius: 6px;
+	background-color: rgb(248, 247, 244);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.search-form input[type="text"] {
+	width: 315px;
+	line-height: 24px;
+	padding: 10px;
+}
+
+.login-link:hover ~.modal-login {
 	display: block;
+	position: absolute;
+	top: 50px;
 }
 
+.modal-login {
+	padding: 20px 15px;
+	border-radius: 6px;
+	background-color: rgb(248, 247, 244);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.modal-login input[type="email"],
+.modal-login input[type="password"] {
+	width: 240px;
+	line-height: 24px;
+	padding: 10px;
+}
 /*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 
 /*=== Форма входа ===*/
-.login-password-info a {
+.login-form p {
+	margin-top: 0;
+}
+
+.login-form .button {
+	display: inline-block;
+}
+
+.login-password-info {
+
+}
+
+.login-password-info {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.restore,
+.registration {
 	font-size: 13px;
 	color: #323232;
 	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
 }
 
-.login-password-info a:hover,
-.login-password-info a:focus,
-.login-password-info a:active {
+.restore:hover,
+.registration:hover,
+.restore:focus,
+.registration:focus,
+.restore:active,
+.registration:active, {
 	color: #e84d37;
 	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
 } 
@@ -851,6 +909,12 @@ footer {
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	display: none;
+}
+
+.cart-form.active:hover ~.cart-full {
+	display: block;
+	position: absolute;
+	top: 50px;
 }
 
 .cart-items {
