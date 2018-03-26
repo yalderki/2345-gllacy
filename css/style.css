@@ -969,26 +969,31 @@ footer {
 	margin-bottom: 15px;
 }
 
+.cart-item-photo,
 .cart-item-name,
 .cart-item-volume,
 .cart-item-price {
 	display: table-cell;
+	vertical-align: middle;
 }
 
-.cart-item-name {
+.cart-item-photo {
+	margin-right: 23px;
+}
+
+/*.cart-item-name {
 	width: 315px;
-}
+}*/
 
-.cart-item-name.first::before {
-	content: url('../img/popular-item-small-1.jpg');
+.cart-item-photo::before {
+	content: url('../img/delete-icon.png');
 	display: inline-block;
     vertical-align: middle;
-	width: 34px;
-	height: 34px;
-	margin-right: 13px;
+	width: 15px;
+	height: 15px;
 }
 
-.cart-item-volum
+.cart-item-volume
 .cart-item-price {
 	text-align: right;
 }
