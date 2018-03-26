@@ -988,15 +988,6 @@ footer {
 	margin-right: 13px;
 }
 
-.cart-item-name.second::before {
-	content: url('../img/popular-item-small-3.jpg');
-	display: inline-block;
-    vertical-align: middle;
-	width: 34px;
-	height: 34px;
-	margin-right: 13px;
-}
-
 .cart-item-volum
 .cart-item-price {
 	text-align: right;
