@@ -17,7 +17,6 @@ body {
 	background-color: #849d8f;
 	font-size: 16px;
 	line-height: 22px;
-	width: 1200px;
 }
 
 a {
@@ -74,15 +73,17 @@ button {
 .wrapper {
 	margin: 0 auto;
 	padding: 9px 27px 0 27px;
-/* 	transition: background-image 0.5s ease, background-color 0.5s ease;
-min-width: 940px;
-background-color: #849d8f;
-background-image: url("../img/slide-1.png");
-background-repeat: no-repeat;
-background-position: top center; */
+	width: 1200px;
+	box-sizing: border-box;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+	min-width: 940px;
+	background-color: #849d8f;
+	background-image: url("../img/slide-1.png");
+	background-repeat: no-repeat;
+	background-position: top center; */
 }
 
-/* .wrapper::before,
+.wrapper::before,
 .wrapper::after {
   content: "";
 
@@ -95,7 +96,7 @@ background-position: top center; */
 
 .wrapper::after {
   background-image: url("../img/slider-item3.png");
-} */
+}
 
 /*=== Шапка ===*/
 .main-header {
@@ -136,10 +137,6 @@ background-position: top center; */
 	line-height: 18px;
 	list-style: none;
 }
-
-/* .site-navigation li {
-	margin-right: 25px;
-} */
 
 /*=== Основное меню ===*/
 .site-navigation-link {
@@ -256,9 +253,9 @@ background-position: top center; */
 	background-color: rgb(248, 247, 244);
 }
 
-.header-contacts-wrapper {
+/* .header-contacts-wrapper {
 	display: relative;
-}
+} */
 
 .header-contacts {
 	text-align: right;
@@ -326,11 +323,6 @@ background-position: top center; */
 .feedback-item textarea {
 	border-color: rgb(178, 178, 178, 0.52);
 }
-
-/* .search-link,
-.login-link {
-	position: relative;
-} */
 
 .main-header-search {
 	position: relative;
@@ -436,7 +428,7 @@ background-position: top center; */
   	color: #ffffff;
 }
 
-/* .slider-controls {
+.slider-controls {
 	position: absolute;
 	bottom: 63px;
 	left: 0;
@@ -471,9 +463,9 @@ background-position: top center; */
   background-image: url("../img/slide-3.png");
 }
 
-#product-1:checked ~ .wrapper #slide1,
-#product-2:checked ~ .wrapper #slide2,
-#product-3:checked ~ .wrapper #slide3 {
+#product-1:checked ~ .wrapper #slide-1,
+#product-2:checked ~ .wrapper #slide-2,
+#product-3:checked ~ .wrapper #slide-3 {
   display: block;
 }
 
@@ -481,7 +473,7 @@ background-position: top center; */
 #product-2:checked ~ .wrapper label[for="product-2"],
 #product-3:checked ~ .wrapper label[for="product-3"] {
   background-color: #ffffff;
-} */
+}
 
 .slider ul {
 	padding: 0;
