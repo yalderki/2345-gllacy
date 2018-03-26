@@ -75,26 +75,31 @@ button {
 	padding: 9px 27px 0 27px;
 	width: 1200px;
 	box-sizing: border-box;
-	transition: background-image 0.5s ease, background-color 0.5s ease;
-	min-width: 940px;
-	background-color: #849d8f;
-	background-image: url("../img/slide-1.png");
-	background-repeat: no-repeat;
-	background-position: top center; */
+	position: relative;
 }
 
-.wrapper::before,
-.wrapper::after {
+.site-wrapper {
+  min-width: 940px;
+  background-color: #849d8f;
+  background-image: url("img/slider-item1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
   content: "";
 
   visibility: hidden;
 }
 
-.wrapper::before {
+.site-wrapper::before {
   background-image: url("../img/slider-item2.png");
 }
 
-.wrapper::after {
+.site-wrapper::after {
   background-image: url("../img/slider-item3.png");
 }
 
@@ -108,10 +113,12 @@ button {
 	display: flex;
 	align-items: center;
 	width: 560px;
+	align-content: center;
 } 
 
 .main-navigation>a {
-	margin-right: 32px;
+	margin-right: 23px;
+	line-height: 0px;
 }
 
 .main-navigation ul {
@@ -122,6 +129,9 @@ button {
 .site-navigation {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	width: 350px;
 }
 
 .site-navigation-item.first {
@@ -232,6 +242,7 @@ button {
 	width: 560px;
 	justify-content: flex-end;
 	align-items: center;
+	align-content: center;
 }
 
 .search-link,
@@ -244,6 +255,33 @@ button {
 	line-height: 16px;
 	font-weight: 500;
 	margin-left: 10px;
+	position: relative;
+}
+
+.search-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url('../img/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url('../img/login.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .search-link:hover,
@@ -253,9 +291,10 @@ button {
 	background-color: rgb(248, 247, 244);
 }
 
-/* .header-contacts-wrapper {
-	display: relative;
-} */
+.header-contacts-wrapper {
+	position: absolute;
+	right: 27px;
+}
 
 .header-contacts {
 	text-align: right;
@@ -448,30 +487,30 @@ button {
 	cursor: pointer;
 }
 
-#product-1:checked ~ .wrapper {
+#product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slide-1.png");
 }
 
-#product-2:checked ~ .wrapper {
+#product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slide-2.png");
 }
 
-#product-3:checked ~ .wrapper {
+#product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slide-3.png");
 }
 
-#product-1:checked ~ .wrapper #slide-1,
-#product-2:checked ~ .wrapper #slide-2,
-#product-3:checked ~ .wrapper #slide-3 {
+#product-1:checked ~ .site-wrapper #slide-1,
+#product-2:checked ~ .site-wrapper #slide-2,
+#product-3:checked ~ .site-wrapper #slide-3 {
   display: block;
 }
 
-#product-1:checked ~ .wrapper label[for="product-1"],
-#product-2:checked ~ .wrapper label[for="product-2"],
-#product-3:checked ~ .wrapper label[for="product-3"] {
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
@@ -863,13 +902,6 @@ footer {
 .footer-navigation .first a {
 	font-weight: 700;
 }
-
-/* .footer-navigation .first::before {
-	content: '';
-	background-image: url('../img/heart-icon.svg');
-	width: 15px;
-	height: 15px;
-} */
 /*=== Ссылки в футере ===*/
 
 /*=== Копирайт в футере ===*/
@@ -947,7 +979,7 @@ footer {
 	width: 315px;
 }
 
-.cart-item-name.first:before {
+.cart-item-name.first::before {
 	content: url('../img/popular-item-small-1.jpg');
 	display: inline-block;
     vertical-align: middle;
@@ -956,7 +988,7 @@ footer {
 	margin-right: 13px;
 }
 
-.cart-item-name.second:before {
+.cart-item-name.second::before {
 	content: url('../img/popular-item-small-3.jpg');
 	display: inline-block;
     vertical-align: middle;
