@@ -421,6 +421,7 @@ button {
 
 .login-form .button {
 	display: inline-block;
+	vertical-align: ;
 }
 
 .login-password-info {
@@ -955,6 +956,10 @@ footer {
 	display: block;
 }
 
+.cart-full:hover {
+	display: block;
+}
+
 .cart-items {
 	color: #323232;
 	font-size: 13px;
@@ -1204,6 +1209,7 @@ footer {
 
 .pagination-list li {
 	display: inline-block;
+	vertical-align: ;
 }
 
 .pagination-list a {
