@@ -9,7 +9,7 @@ active - находимся на странице
 }*/
 
 body {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	
 	font-family: 'Roboto', Arial, sans-serif;
@@ -684,6 +684,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
 }
 
 .popular-item {
@@ -697,9 +699,16 @@ input[type="radio"].visually-hidden {
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-/*.popular-item:hover .popular-quick-look {
+.popular-item:hover .popular-quick-look {
 	display: block;
-}*/
+}
+
+.popular-item:hover .popular-price {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 200px;
+}
 
 .popular-quick-look.button {
 	font-size: 18px;
@@ -722,7 +731,7 @@ input[type="radio"].visually-hidden {
 	line-height: 45px;
 	position: absolute;
 	z-index: 1;
-	bottom: 55px;
+	top: 200px;
 }
 
 .popular-price-type {
