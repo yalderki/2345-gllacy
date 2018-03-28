@@ -178,7 +178,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item>a {
 	color: #fff;
-	text-decoration: underline;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	cursor: pointer;
 	
 	display: block;
@@ -194,7 +194,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item:hover>a{
 	color: #333333;	
-	border-bottom: 1px solid rgb(255, 255, 255);
 	text-decoration: none;
 }
 
@@ -1113,7 +1112,7 @@ footer {
 .footer-navigation a {
 	font-size: 13px;
 	line-height: 18px;
-	border-bottom: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-navigation a:hover,
@@ -1132,8 +1131,8 @@ footer {
 	background-image: url('../img/heart-icon.svg');
 	
 	position: absolute;
-	top: 7px;
-	left: -20px;
+	top: 6px;
+	left: -22px;
 	
 	width: 50px;
 	height: 50px;
@@ -1162,7 +1161,7 @@ footer {
 }
 
 .footer-copyright a {
-	border-bottom: 1px solid rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-copyright a:hover,
