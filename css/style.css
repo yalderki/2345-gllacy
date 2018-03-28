@@ -914,7 +914,7 @@ input[type="radio"].visually-hidden {
 footer {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: stretch;
+	justify-content: space-between;
 	align-items: center;
 	padding: 25px 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.2)
@@ -935,6 +935,11 @@ footer {
 	background-color: rgb(255, 255, 255, 0.5);
 	background-repeat: no-repeat;
 	margin-right: 10px;
+	width: 32px;
+	height: 32px;
+	background-position: 0 0;
+	display: block;
+	border-radius: 20px;
 }
 
 .social-button.tw {
