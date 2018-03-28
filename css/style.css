@@ -681,10 +681,6 @@ input[type="radio"].visually-hidden {
 /*=== Акции ===*/
 
 /*=== Популярные товары ===*/
-/* .container {
-	position: relative;
-} */
-
 .popular-items {
 	margin-bottom: 30px;
 }
@@ -1042,7 +1038,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 25px 0;
+	padding: 15px 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
 /*=== Социальные сети ===*/
@@ -1053,14 +1049,18 @@ footer {
 	margin-right: 130px;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	width: 267px;
+}
+
+.social-links li {
+	margin-right: 14px;
 }
 
 .social-button {
 	background-color: rgb(255, 255, 255, 0.5);
 	background-repeat: no-repeat;
-	margin-right: 10px;
 	width: 32px;
 	height: 32px;
 	background-position: 0 0;
