@@ -799,7 +799,22 @@ input[type="radio"].visually-hidden {
 	padding: 28px 20px;
 }
 
+.presentation-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 485px;
+	align-items: stretch;
+	justify-content: center;
+/*	margin: 0 auto;*/
+/*	align-content: space-between;*/
+}
 
+.presentation-wrapper p {
+/*	display: inline-block;*/
+	position: relative;
+	padding-left: 58px;
+}
 
 /* .presentation-wrapper {
 	padding: 
@@ -812,18 +827,79 @@ input[type="radio"].visually-hidden {
 	-moz-column-gap: 26px;
 	-webkit-column-gap: 26px;
 } */
+	
+.presentation-wrapper .column-1::before {
+	content: "";
+	background-image: url('../img/icecream-icon.svg');
+	
+	position: absolute;
+	top: -18px;
+	left: 0px;
+	
+	width: 50px;
+	height: 50px;
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
-.presentation span,
+.presentation-wrapper .column-2::before {
+	content: "";
+	background-image: url('../img/leaf-icon.svg');
+	
+	position: absolute;
+	top: -18px;
+	left: 0px;
+	
+	width: 50px;
+	height: 50px;
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.presentation-wrapper .column-3::before {
+	content: "";
+	background-image: url('../img/angus-icon.svg');
+	
+	position: absolute;
+	top: -18px;
+	left: 0px;
+	
+	width: 50px;
+	height: 50px;
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.presentation-wrapper .column-4::before {
+	content: "";
+	background-image: url('../img/thermometer-icon.svg');
+	
+	position: absolute;
+	top: -18px;
+	left: 0px;
+	
+	width: 50px;
+	height: 50px;
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.presentation .presentation-name,
 .presentation p,
 .blog-preview span, 
 .blog-preview a {
 	color: #323232;
 }
 
-.presentation span {
+.presentation .presentation-name {
 	font-weight: 500;
-	font-size:24px;
+	font-size: 24px;
 	line-height: 30px;
+	margin-bottom: 28px;
 }
 
 /*=== Блог ===*/
