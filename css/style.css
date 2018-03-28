@@ -91,7 +91,7 @@ input[type="radio"].visually-hidden {
 
 .wrapper {
 	margin: 0 auto;
-	padding: 9px 27px 0 27px;
+	padding: 8px 27px 0 27px;
 	width: 1200px;
 	box-sizing: border-box;
 	position: relative;
@@ -137,10 +137,13 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	width: 560px;
 	align-content: center;
-} 
+}
+
+.main-header-logo {
+	margin-right: 10px;
+}
 
 .main-navigation>a {
-/*	margin-right: 23px;*/
 	line-height: 0px;
 	display: block;
 }
@@ -156,7 +159,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-	width: 405px;
+	width: 370px;
 }
 
 .site-navigation,
@@ -169,22 +172,28 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+.site-navigation li {
+	padding: 5px 12px;
+}
+
 .site-navigation-item>a {
 	color: #fff;
-/*	border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 	text-decoration: underline;
 	cursor: pointer;
-	padding: 5px 12px;
+	
 	display: block;
 	vertical-align: middle;
 	font-weight: 700;
 }
 
-.site-navigation-item:hover>a{
-	color: #333333;	
+.site-navigation-item:hover {
 	background-color: #fff;
 	border-radius: 20px;
-	padding: 6px 12px;
+	padding: 5px 12px;
+}
+
+.site-navigation-item:hover>a{
+	color: #333333;	
 	border-bottom: 1px solid rgb(255, 255, 255);
 	text-decoration: none;
 }
@@ -273,7 +282,7 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 	width: 560px;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: flex-start;
 	align-content: center;
 }
 
@@ -297,12 +306,11 @@ input[type="radio"].visually-hidden {
 	line-height: 16px;
 	font-weight: 500;
 	margin-left: 10px;
-/*	position: relative;*/
 }
 
 .search-link {
     position: relative;
-    padding: 6px 6px;
+    padding: 8px 8px;
     display: block;
     width: 17px;
     height: 17px;
@@ -315,34 +323,25 @@ input[type="radio"].visually-hidden {
     top: 50%;
     left: 50%;
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     transform: translate(-50%,-50%);
 }
 .search-link:hover svg,
 .login-link:hover svg {
 	color: #000000;
 }
-/*.search-link::before {
-	content: "";
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	left: 5px;
-	top: 5px;
-	background-image: url('../img/search-icon.svg');
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}*/
 
-/*.search-link:hover::before {
-	color: #323232;
-	background-color: rgb(248, 247, 244);
-}*/
-
-.login-link,
-.cart-form {
+.login-link {
 	padding: 6px 16px 6px 10px;
+	height: 19px;
+	line-height: 19px;
+	min-width: 60px;
+	text-align: right;
+}
+
+.cart-form {
+	padding: 6px 32px 6px 16px;
 	height: 19px;
 	line-height: 19px;
 	min-width: 60px;
@@ -354,30 +353,6 @@ input[type="radio"].visually-hidden {
 	margin-right: 10px;
 	float: left;
 }
-
-
-/*.login-link::before {
-	content: "";
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	left: 16px;
-	top: 5px;
-	background-image: url('../img/login.svg');
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}*/
-
-/*.login-link:hover::before {
-	color: #323232;
-	background-color: rgb(248, 247, 244);
-}
-*/
-/*.cart-form {
-	padding: 6px 42px 6px 42px;
-	width: 21px;
-	height: 19px;
-}*/
 
 .search-link:hover,
 .login-link:hover,
@@ -400,10 +375,6 @@ input[type="radio"].visually-hidden {
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
-
-
-
-
 
 .header-contacts-wrapper {
 	position: absolute;
@@ -710,8 +681,12 @@ input[type="radio"].visually-hidden {
 /*=== Акции ===*/
 
 /*=== Популярные товары ===*/
+/* .container {
+	position: relative;
+} */
+
 .popular-items {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .popular-items ul {
@@ -721,43 +696,53 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	align-content: flex-start;
 	min-height: 386px;
 	margin-bottom: -55px;
-
 }
 
 .popular-item {
-	padding: 5px 10px 0;
+/*	padding: 5px 10px 0;*/
 	width: 267px;
 	position: relative;
 	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
 }
 
-.popular-item:hover {
-    margin-bottom: 30px;
-    padding-bottom: 25px;
+.popular-item-wrapper {
+	position: absolute;
+	top: -5px;
+	left: -14px;
+	width: 294px;
+	height: 406px;
+	padding: 5px 10px 0;
 	border-radius: 5px;
-	background-color: rgb(254, 254, 254, 0.2);
+	background-color: rgba(254, 254, 254, 0.2);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	box-sizing: border-box;
+	display: none;
+}
+
+.popular-item:hover .popular-item-wrapper {
+	display: block;
 }
 
 .popular-item:hover .popular-quick-look {
 	display: block;
 }
 
-.popular-item:hover .popular-price {
-	display: block;
-	position: absolute;
-	z-index: 1;
-	top: 200px;
-}
-
 .popular-quick-look.button {
 	font-size: 18px;
 	line-height: 24px;
 	display: none;
+	width: 182px;
+/*	margin: 10px auto;*/
+	margin-left: -110px;
+	position: absolute;
+	margin-bottom: 20px;
+	left: 50%;	
 }
 
 .popular-label {
@@ -766,7 +751,7 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	border-radius: 20px;
 	position: absolute;
-	z-index: 1;
+	z-index: 10;
 	display: block;
 	width: 61px;
 	height: 61px;
@@ -774,6 +759,8 @@ input[type="radio"].visually-hidden {
 
 .popular-photo {
 	border-radius: 50%;
+	z-index: 1;
+	position: relative;
 }
 
 .popular-price {
@@ -782,7 +769,8 @@ input[type="radio"].visually-hidden {
 	line-height: 45px;
 	position: absolute;
 	z-index: 2;
-	top: 200px;
+	top: 210px;
+	letter-spacing: -2px;
 }
 
 .popular-price-type {
@@ -790,7 +778,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-link {
-	margin-bottom: 20px;
+	margin: 8px 0 12px 0;
 	text-align: center;
 }
 
@@ -808,8 +796,22 @@ input[type="radio"].visually-hidden {
 	border-radius: 20px;
 	margin-bottom: 40px;
 	box-sizing: border-box;
-	padding: 30px 20px;
+	padding: 28px 20px;
 }
+
+
+
+/* .presentation-wrapper {
+	padding: 
+	width: 100%; указываем общую ширину блока с колонками
+	text-align: left; выравнивание текста внутри колонок
+	column-count: 2; количество колонок, на которое хотим разбить текст
+	-moz-column-count: 2; для мозилы
+	-webkit-column-count: 2; для webkit браузеров
+	column-gap: 26px; отступ между колонками
+	-moz-column-gap: 26px;
+	-webkit-column-gap: 26px;
+} */
 
 .presentation span,
 .presentation p,
