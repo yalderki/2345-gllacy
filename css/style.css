@@ -381,7 +381,7 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 16px;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .contacts-phone {
@@ -433,8 +433,6 @@ input[type="radio"].visually-hidden {
 .feedback-item textarea {
 	border-color: rgb(178, 178, 178, 0.52);
 }
-
-
 
 .search-form input[type="text"] {
 	width: 315px;
@@ -637,7 +635,7 @@ input[type="radio"].visually-hidden {
 .action-first,
 .action-second {
 	border-radius: 15px;
-	padding: 15px 20px;
+	padding: 16px 20px;
 	box-sizing: border-box;
 	width: 560px;
 }
@@ -662,13 +660,14 @@ input[type="radio"].visually-hidden {
 .action-description {
 	font-weight: 700;
 	font-size: 18px;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 }
 
 .actions .button {
 	float: right;
-	padding: 15px 30px;
+	padding: 14px 30px;
 	border-radius: 25px;
+	margin-bottom: 10px;
 }
 /*=== Акции ===*/
 
@@ -718,7 +717,12 @@ input[type="radio"].visually-hidden {
 
 .popular-label {
 	background-image: url('../img/popular-label.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
 	border-radius: 20px;
+	position: absolute;
+	z-index: 1;
+	display: block;
 }
 
 .popular-photo {
@@ -730,7 +734,7 @@ input[type="radio"].visually-hidden {
 	font-size: 45px;
 	line-height: 45px;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 200px;
 }
 
