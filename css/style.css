@@ -279,7 +279,6 @@ input[type="radio"].visually-hidden {
 
 .header-login {
 	display: flex;
-	width: 141px;
 	list-style: none;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -302,11 +301,28 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link {
-	padding: 6px 16px 6px 16px;
-	width: 35px;
-	height: 35px;
+    position: relative;
+    padding: 6px 6px;
+    display: block;
+    width: 17px;
+    height: 17px;
+    line-height: 16px;
+    text-indent: -9999px;
 }
 
+.search-link svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 14px;
+    height: 14px;
+    transform: translate(-50%,-50%);
+}
+.search-link:hover svg,
+.login-link:hover svg {
+	color: #000000;
+}
 /*.search-link::before {
 	content: "";
 	position: absolute;
@@ -324,14 +340,21 @@ input[type="radio"].visually-hidden {
 	background-color: rgb(248, 247, 244);
 }*/
 
-.login-link {
-	padding: 6px 16px 6px 42px;
-	width: 21px;
+.login-link,
+.cart-form {
+	padding: 6px 16px 6px 10px;
 	height: 19px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	line-height: 19px;
+	min-width: 60px;
+	text-align: right;
 }
+
+.login-link svg,
+.cart-form svg {
+	margin-right: 10px;
+	float: left;
+}
+
 
 /*.login-link::before {
 	content: "";
@@ -345,14 +368,16 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }*/
 
-.login-link:hover::before {
+/*.login-link:hover::before {
 	color: #323232;
 	background-color: rgb(248, 247, 244);
 }
-
-.cart-form {
+*/
+/*.cart-form {
 	padding: 6px 42px 6px 42px;
-}
+	width: 21px;
+	height: 19px;
+}*/
 
 .search-link:hover,
 .login-link:hover,
@@ -698,14 +723,21 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	align-items: center;
 	align-content: flex-start;
+	min-height: 386px;
+	margin-bottom: -55px;
+
 }
 
 .popular-item {
+	padding: 5px 10px 0;
 	width: 267px;
 	position: relative;
+	box-sizing: border-box;
 }
 
 .popular-item:hover {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
 	border-radius: 5px;
 	background-color: rgb(254, 254, 254, 0.2);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -736,6 +768,8 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	z-index: 1;
 	display: block;
+	width: 61px;
+	height: 61px;
 }
 
 .popular-photo {
@@ -756,6 +790,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-link {
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -957,6 +992,7 @@ footer {
 	background-position: 0 0;
 	display: block;
 	border-radius: 20px;
+	border: 2px solid rgba(255, 255, 255, .4);
 }
 
 .social-button.tw {
