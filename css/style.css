@@ -1038,7 +1038,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px 0;
+	padding: 14px 0;
 	border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
 /*=== Социальные сети ===*/
@@ -1046,7 +1046,7 @@ footer {
 	margin: 0;
 	padding: 0;
 	list-style: none; 
-	margin-right: 130px;
+/*	margin-right: 115px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -1087,16 +1087,27 @@ footer {
 /*=== Социальные сети ===*/
 
 /*=== Ссылки в футере ===*/
+.footer-navigation-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 96px;
+}
+
 .footer-navigation-wrapper {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	margin-right: 27px;
 }
 
 .footer-navigation {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-right: 25px;
+/*	margin-right: 25px;
+	padding-left: 22px;*/
+	position: relative;	
+	box-sizing: border-box;
 }
 
 .footer-navigation a {
@@ -1115,11 +1126,32 @@ footer {
 .footer-navigation .first a {
 	font-weight: 700;
 }
+
+.footer-navigation .first a::before {
+	content: "";
+	background-image: url('../img/heart-icon.svg');
+	
+	position: absolute;
+	top: 7px;
+	left: -20px;
+	
+	width: 50px;
+	height: 50px;
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer-navigation .first a:hover::before,
+.footer-navigation .first a:focus::before,
+.footer-navigation .first a:active::before {
+	color: #ffbc9e;
+}
 /*=== Ссылки в футере ===*/
 
 /*=== Копирайт в футере ===*/
 .footer-copyright {
-	width: 267px;
+	width: 191px;
 	margin-left: 150px;
 }
 
