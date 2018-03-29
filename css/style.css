@@ -928,10 +928,26 @@ input[type="radio"].visually-hidden {
 /*=== Блог ===*/
 
 /*=== Подписка ===*/
+.subscription-wrapper {
+	background-image: repeating-linear-gradient(
+						135deg, 
+						#92cdff 0px, 
+						#92cdff 5px, 
+						#f8f7f4 5px, 
+						#f8f7f4 10px, 
+						#fe9e90 10px, 
+						#fe9e90 15px, 
+						#f8f7f4 15px, 
+						#f8f7f4 20px);
+	border-radius: 18px;
+	width: 560px;
+}
+
 .subscription {
 	background-color: #f8f7f4;
 	border-radius: 18px;
-	width: 560px;
+	width: 550px;
+	margin: 5px;
 	box-sizing: border-box;
 	padding: 25px;
 }
@@ -957,7 +973,7 @@ input[type="radio"].visually-hidden {
 	border-width: 1px;
 	border-color: rgb(211, 211, 210);
 	border-radius: 5px;
-	width: 365px;
+	width: 355px;
 	padding: 7px;
 }
 
