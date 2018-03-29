@@ -38,10 +38,12 @@ button {
 
 .button {
 	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
 	vertical-align: middle;
 	text-align: center;
 	border: none;
-	border-radius: 20px;
+	border-radius: 25px;
 	padding: 10px 20px;
 	color: #fff;
 	background-image: linear-gradient(to bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -55,7 +57,7 @@ button {
 	color: #fff;
 }
 
-.button:focus {
+.button:active {
 	background-image: linear-gradient(to bottom, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 	color: #fff;
@@ -357,14 +359,23 @@ input[type="radio"].visually-hidden {
 	right: -2px;
 }
 
-
 .login-link {
-	padding: 6px 16px 6px 10px;
+	padding: 6px 16px 6px 14px;
 	height: 19px;
 	line-height: 19px;
 	min-width: 60px;
 	text-align: right;
 	transition: all 0.3s ease;
+}
+
+.login-link::after {
+	content: "";
+	width: 90px;
+	height: 10px;
+	background-color: red;
+	position: absolute;
+	top: 28px;
+	right: -2px;
 }
 
 .cart-form {
@@ -378,7 +389,7 @@ input[type="radio"].visually-hidden {
 
 .login-link svg,
 .cart-form svg {
-	margin-right: 10px;
+	margin-right: 8px;
 	float: left;
 }
 
@@ -435,6 +446,10 @@ input[type="radio"].visually-hidden {
 	background-color: #f8f7f4;
 }
 
+.login-item {
+	margin-bottom: 20px;
+}
+
 .login-item input,
 .search-form input,
 .feedback-item input,
@@ -486,18 +501,19 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-login {
-	padding: 20px 15px;
+	padding: 20px 17px;
 	border-radius: 6px;
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	position: absolute;
-	top: 25px;
+	top: 35px;
 	z-index: 1;
+	right: -3px;
 }
 
 .modal-login input[type="email"],
 .modal-login input[type="password"] {
-	width: 240px;
+	width: 220px;
 	line-height: 24px;
 	padding: 10px;
 }
@@ -509,14 +525,17 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form .button {
-	display: inline-block;
-	vertical-align: ;
+/* 	display: inline-block;
+vertical-align: ; */
+	width: 105px;
+	border-radius: 25px;
 }
 
 .login-password-info {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	float: right;
 }
 
 .restore,
@@ -575,6 +594,11 @@ input[type="radio"].visually-hidden {
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.slider-controls label:hover {
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -643,20 +667,27 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	background: #f26843;
-	background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border-radius: 50px;
+	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: linear-gradient(#f26843 0%, #e74a35 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	border: none;
 	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .special-offer-button:hover {
-	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .special-offer-button:active {
-	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 /*=== Слайдер ===*/
@@ -702,9 +733,28 @@ input[type="radio"].visually-hidden {
 
 .actions .button {
 	float: right;
-	padding: 14px 30px;
+	padding: 13px 24px;
 	border-radius: 25px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: linear-gradient(#f26843 0%, #e74a35 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	transition: all 0.3s ease;
+}
+
+.actions .button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.actions .button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 /*=== Акции ===*/
 
@@ -761,12 +811,30 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 24px;
 	display: none;
-	width: 182px;
-/*	margin: 10px auto;*/
-	margin-left: -110px;
 	position: absolute;
+	width: 182px;
+	margin-left: -110px;
 	margin-bottom: 20px;
-	left: 50%;	
+	left: 50%;
+	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: linear-gradient(#f26843 0%, #e74a35 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	transition: all 0.3s ease;
+}
+
+.popular-quick-look.button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.popular-quick-look.button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .popular-label {
@@ -817,10 +885,10 @@ input[type="radio"].visually-hidden {
 /*=== Контент ===*/
 .presentation {
 	background-image: url('../img/waffle.jpg');
-	border-radius: 20px;
+	border-radius: 15px;
 	margin-bottom: 40px;
 	box-sizing: border-box;
-	padding: 28px 20px 8px;
+	padding: 28px 20px 10px;
 }
 
 .presentation-container {
@@ -833,7 +901,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-/*	width: 569px;*/
 }
 
 .presentation-wrapper p {
@@ -928,7 +995,7 @@ input[type="radio"].visually-hidden {
 
 .blog-preview {
 	background-image: url('../img/blog-image.jpg');
-	border-radius: 18px;
+	border-radius: 15px;
 	width: 560px;
 	box-sizing: border-box;
 	padding: 25px 20px;
@@ -959,31 +1026,31 @@ input[type="radio"].visually-hidden {
 /*=== Подписка ===*/
 .subscription-wrapper {
 	background-image: repeating-linear-gradient(
-						135deg, 
-						#92cdff 0px, 
-						#92cdff 5px, 
-						#f8f7f4 5px, 
-						#f8f7f4 10px, 
-						#fe9e90 10px, 
-						#fe9e90 15px, 
-						#f8f7f4 15px, 
-						#f8f7f4 20px);
-	border-radius: 18px;
+		135deg, 
+		#fe9e90 0px,
+		#fe9e90 5px,
+		#f8f7f4 5px,
+		#f8f7f4 10px,
+		#92cdff 10px,
+		#92cdff 15px,
+		#f8f7f4 15px,
+		#f8f7f4 20px);
+	border-radius: 15px;
 	width: 560px;
 }
 
 .subscription {
 	background-color: #f8f7f4;
-	border-radius: 18px;
+	border-radius: 15px;
 	width: 550px;
 	margin: 5px;
 	box-sizing: border-box;
-	padding: 25px;
+	padding: 20px;
 }
 
-.subscription p {
+.subscription>p {
 	color: #5a5a5a;
-/*	margin-bottom: 40px;*/
+	margin-top: 10px;
 }
 
 .subscription-form {
@@ -996,27 +1063,36 @@ input[type="radio"].visually-hidden {
 
 .subscription-item input {
 	font: inherit;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 24px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(211, 211, 210);
 	border-radius: 5px;
-	width: 355px;
-	padding: 7px;
+	width: 367px;
+	padding: 10px 0px 10px 14px;
+	box-sizing: border-box;
+}
+
+.subscription-item input[type="email"]:focus {
+	font-weight: 500;
 }
 
 .subscription-item input:hover {
 	border-width: 2px;
 	border-color: rgba(154, 154, 154, 0.52);
+	width: 365px;
+	padding: 9px 0px 9px 14px;
 }
 
 .subscription-item input:focus {
 	border-width: 2px;
 	border-color: rgba(46, 136, 228, 0.52);
+	width: 365px;
+	padding: 9px 0px 9px 14px;
 }
 
-.subscription- input:active {
+.subscription-item input:active {
 	border-color: rgba(178, 178, 178, 0.52);
 }
 
@@ -1056,7 +1132,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 }
 
 .footer-address-item {
@@ -1072,7 +1148,6 @@ input[type="radio"].visually-hidden {
 	box-sizing: border-box;
 	padding: 12px 20px;
 	border-radius: 25px;
-	letter-spacing: 1px;
 }
 /*=== Контакты ===*/
 
