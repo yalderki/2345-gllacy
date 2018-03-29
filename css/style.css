@@ -442,7 +442,7 @@ input[type="radio"].visually-hidden {
 .modal-login,
 .search-form,
 .modal-feedback {
-	display: none;
+/*	display: none;*/
 	background-color: #f8f7f4;
 }
 
@@ -525,8 +525,6 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form .button {
-/* 	display: inline-block;
-vertical-align: ; */
 	width: 105px;
 	border-radius: 25px;
 }
@@ -557,13 +555,58 @@ vertical-align: ; */
 /*как сделать жирным вводимые данные?*/
 /*=== Форма входа ===*/
 	
-/*=== Форма обратной связи ===*/	
+/*=== Форма обратной связи ===*/
+.modal-feedback {
+	width: 479px;
+	padding: 20px 25px;
+	border-radius: 10px;
+	
+	background-color: rgb(248, 247, 244);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	
+	top: 336px;
+	left: 50%;
+	
+	margin-left: -240px;
+	z-index: 2;
+}
+	
 .modal-feedback h2 {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 28px;
 	color: #323232;
+	margin-top: 0;
 }
+
+.modal-feedback input:hover {
+	border-width: 2px;
+	border-color: rgba(154, 154, 154, 0.52);
+}
+
+.modal-feedback input:focus {
+	border-width: 2px;
+	border-color: rgba(46, 136, 228, 0.52);
+}
+
+.modal-feedback input:active {
+	border-color: rgba(178, 178, 178, 0.52);
+}
+
+.modal-feedback input[type="text"] {
+	width: 265px;
+	height: 44px;
+	line-height: 24px;
+	padding: 0px 10px;
+}
+
+.modal-feedback input[type="text"]:focus {
+	font-weight: 500;
+	width: 263px;
+}
+
+
 /*=== Форма обратной связи ===*/
 /*=== Шапка ===*/
 
@@ -1005,7 +1048,6 @@ vertical-align: ; */
 	font-weight: 500;
 	display: block;
 	margin-bottom: 5px;
-
 }
 
 .blog-preview a {
@@ -1019,7 +1061,7 @@ vertical-align: ; */
 .blog-preview a:active,
 .blog-preview a:focus {
 	color: #e84d37;
-	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
+	/*border-bottom: 1px solid rgba(232, 77, 55 , 0.2);*/
 }
 /*=== Блог ===*/
 
@@ -1070,6 +1112,7 @@ vertical-align: ; */
 	border-color: rgb(211, 211, 210);
 	border-radius: 5px;
 	width: 367px;
+	height: 44px;
 	padding: 10px 0px 10px 14px;
 	box-sizing: border-box;
 }
@@ -1105,6 +1148,26 @@ vertical-align: ; */
 /*=== Контакты ===*/
 .footer-contacts {
 	position: relative;
+}
+
+.footer-contacts img {
+	padding: 0;
+}
+
+.footer-contacts::before {
+	content: "";
+	background-image: url('../img/red-icecream-icon.svg');
+		
+	position: absolute;
+	
+	top: 125px;
+	left: 253px;
+		
+	width: 80px;
+	height: 145px;
+	
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .footer-contacts-wrapper {
