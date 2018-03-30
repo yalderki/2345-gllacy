@@ -400,7 +400,7 @@ input[type="radio"].visually-hidden {
 	background-color: rgb(248, 247, 244);
 }
 
-.search-link:hover ~.search-form {
+.main-header-search:hover .search-form {
 	display: block;
 }
 
@@ -442,7 +442,7 @@ input[type="radio"].visually-hidden {
 .modal-login,
 .search-form,
 .modal-feedback {
-/*	display: none;*/
+	display: none;
 	background-color: #f8f7f4;
 }
 
@@ -496,7 +496,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.login-link:hover ~.modal-login {
+.header-login:hover .modal-login {
 	display: block;
 }
 
@@ -1148,6 +1148,14 @@ input[type="radio"].visually-hidden {
 /*=== Контакты ===*/
 .footer-contacts {
 	position: relative;
+	min-height: 432px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.footer-contacts .wrapper {
+	padding: 0;
 }
 
 .footer-contacts img {
@@ -1178,9 +1186,10 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	padding: 30px 25px;
 	box-sizing: border-box;
-	position: absolute;
+	//position: absolute;
 	right: 0px;
 	top: 62px;
+	margin-top: 62px;
 }
 
 .footer-address {
