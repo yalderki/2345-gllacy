@@ -460,7 +460,6 @@ input[type="radio"].visually-hidden {
 .feedback-item input,
 .feedback-item textarea {
 	font: inherit;
-/*	font-size: 14px;*/
 	line-height: 24px;
 	border-style: solid;
 	border-width: 1px;
@@ -718,10 +717,12 @@ input[type="radio"].visually-hidden {
 	display: block;
 	position: absolute;
 	background-image: url('../img/delete-icon.png');
-	top: 0px;
-	right: 0px;
-	width: 15px;
-	height: 15px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	top: 15px;
+	right: 15px;
+	width: 11px;
+	height: 11px;
 	cursor: pointer;
 	z-index: 3;
 }
