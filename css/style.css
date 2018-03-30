@@ -147,6 +147,11 @@ input[type="radio"].visually-hidden {
 	margin-right: 10px;
 }
 
+.main-header-logo img {
+	width: 154px;
+	height: 64px;
+}
+
 .main-navigation>a {
 	line-height: 0px;
 	display: block;
@@ -935,7 +940,7 @@ input[type="radio"].visually-hidden {
 .presentation {
 	background-image: url('../img/waffle.jpg');
 	border-radius: 15px;
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 	box-sizing: border-box;
 	padding: 28px 20px 10px;
 }
@@ -1036,7 +1041,7 @@ input[type="radio"].visually-hidden {
 
 /*=== Блог ===*/
 .blog {
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -1093,7 +1098,7 @@ input[type="radio"].visually-hidden {
 	width: 550px;
 	margin: 5px;
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 21px;
 }
 
 .subscription>p {
@@ -1154,7 +1159,7 @@ input[type="radio"].visually-hidden {
 /*=== Контакты ===*/
 .footer-contacts {
 	position: relative;
-	min-height: 432px;
+	min-height: 429px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -1162,7 +1167,9 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts .wrapper {
-	padding: 0 27px;
+	padding: 0;
+	left: -27px;
+	top: 5px;
 }
 
 .footer-contacts img {
@@ -1185,7 +1192,7 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 }
 
-.footer-contacts-wrapper {
+.footer-address-wrapper {
 	color: #323232;
 	background-color: #fff;
 	border-radius: 20px;
@@ -1221,7 +1228,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 4px;
 }
 
-.footer-contacts-wrapper .button {
+.footer-address-wrapper .button {
 	width: 100%;
 	display: block;
 	box-sizing: border-box;
@@ -1231,13 +1238,16 @@ input[type="radio"].visually-hidden {
 /*=== Контакты ===*/
 
 /*=== Футер ===*/
+/* inner footer {
+	border-top: 1px solid rgba(255, 255, 255, 0.2)
+} */
+
 footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 14px 0;
-	border-top: 1px solid rgba(255, 255, 255, 0.2)
 }
 /*=== Социальные сети ===*/
 .social-links {
@@ -1257,14 +1267,14 @@ footer {
 }
 
 .social-button {
-	background-color: rgb(255, 255, 255, 0.5);
+	display: block;
+	background-color: rgba(255, 255, 255, .5);
 	background-repeat: no-repeat;
+	background-position: 0 0;
 	width: 32px;
 	height: 32px;
-	background-position: 0 0;
-	display: block;
 	border-radius: 20px;
-	border: 2px solid rgba(255, 255, 255, .4);
+	border: 2px solid rgba(255, 255, 255, .5);
 }
 
 .social-button.tw {
@@ -1282,6 +1292,17 @@ footer {
 .social-button.vk {
 	background-image: url('../img/vk-icon.svg');
 }
+
+/*.social-button:hover {
+	background-color: rgba(255, 255, 255, 1);
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.social-button:focus,
+.social-button:active, {
+	background-color: rgba(255, 255, 255, .5);
+	border: 2px solid rgba(255, 255, 255, .5);
+}*/
 /*=== Социальные сети ===*/
 
 /*=== Ссылки в футере ===*/
@@ -1349,7 +1370,7 @@ footer {
 
 /*=== Копирайт в футере ===*/
 .footer-copyright {
-	width: 191px;
+	width: 190px;
 	margin-left: 150px;
 }
 
