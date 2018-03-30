@@ -412,7 +412,7 @@ input[type="radio"].visually-hidden {
 .search-form {
 	position: absolute;
 	top: 35px;
-	right: -25px;
+	right: 0px;
 	z-index: 1;
 	padding: 20px 15px;
 	border-radius: 6px;
@@ -447,7 +447,7 @@ input[type="radio"].visually-hidden {
 .modal-login,
 .search-form,
 .modal-feedback {
-	display: none;
+/*	display: none;*/
 	background-color: #f8f7f4;
 }
 
@@ -460,7 +460,7 @@ input[type="radio"].visually-hidden {
 .feedback-item input,
 .feedback-item textarea {
 	font: inherit;
-	font-size: 14px;
+/*	font-size: 14px;*/
 	line-height: 24px;
 	border-style: solid;
 	border-width: 1px;
@@ -492,9 +492,15 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input[type="text"] {
-	width: 315px;
+	width: 310px;
+	height: 44px;
+	box-sizing: border-box;
 	line-height: 24px;
 	padding: 10px;
+}
+
+.search-form input[type="text"]:focus{
+	font-weight: 700;
 }
 
 .header-login {
@@ -518,9 +524,16 @@ input[type="radio"].visually-hidden {
 
 .modal-login input[type="email"],
 .modal-login input[type="password"] {
-	width: 220px;
+	width: 245px;
+	height: 44px;
+	box-sizing: border-box;
 	line-height: 24px;
 	padding: 10px;
+}
+
+.modal-login input[type="email"]:focus,
+.modal-login input[type="password"]:focus {
+	font-weight: 700;
 }
 /*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 
@@ -532,6 +545,25 @@ input[type="radio"].visually-hidden {
 .login-form .button {
 	width: 105px;
 	border-radius: 25px;
+	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: linear-gradient(#f26843 0%, #e74a35 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	transition: all 0.3s ease;
+}
+
+.login-form .button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.login-form .button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .login-password-info {
@@ -553,7 +585,7 @@ input[type="radio"].visually-hidden {
 .restore:focus,
 .registration:focus,
 .restore:active,
-.registration:active, {
+.registration:active {
 	color: #e84d37;
 	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
 } 
@@ -562,8 +594,7 @@ input[type="radio"].visually-hidden {
 	
 /*=== Форма обратной связи ===*/
 .modal-feedback {
-	width: 479px;
-	padding: 20px 25px;
+	padding: 22px 26px;
 	border-radius: 10px;
 	
 	background-color: rgb(248, 247, 244);
@@ -585,33 +616,54 @@ input[type="radio"].visually-hidden {
 	margin-top: 0;
 }
 
-.modal-feedback input:hover {
-	border-width: 2px;
-	border-color: rgba(154, 154, 154, 0.52);
-}
-
-.modal-feedback input:focus {
-	border-width: 2px;
-	border-color: rgba(46, 136, 228, 0.52);
-}
-
-.modal-feedback input:active {
-	border-color: rgba(178, 178, 178, 0.52);
-}
-
-.modal-feedback input[type="text"] {
-	width: 265px;
+.modal-feedback input {
+	width: 267px;
 	height: 44px;
+	box-sizing: border-box;
+	font-size: 16px;
 	line-height: 24px;
 	padding: 0px 10px;
 }
 
-.modal-feedback input[type="text"]:focus {
-	font-weight: 500;
-	width: 263px;
+.modal-feedback textarea {
+	width: 425px;
+	height: 154px;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 
+.modal-feedback input[type="text"]:focus,
+.modal-feedback textarea:focus {
+	font-weight: 500;
+}
 
+.modal-feedback .button {
+	float: right;
+	border-radius: 25px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
+	background: linear-gradient(#f26843 0%, #e74a35 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	transition: all 0.3s ease;
+}
+
+.modal-feedback .button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.modal-feedback .button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
 /*=== Форма обратной связи ===*/
 /*=== Шапка ===*/
 
@@ -1293,7 +1345,7 @@ footer {
 	background-image: url('../img/vk-icon.svg');
 }
 
-/*.social-button:hover {
+.social-button:hover {
 	background-color: rgba(255, 255, 255, 1);
 	border: 2px solid rgba(255, 255, 255, 1);
 }
@@ -1302,7 +1354,7 @@ footer {
 .social-button:active, {
 	background-color: rgba(255, 255, 255, .5);
 	border: 2px solid rgba(255, 255, 255, .5);
-}*/
+}
 /*=== Социальные сети ===*/
 
 /*=== Ссылки в футере ===*/
