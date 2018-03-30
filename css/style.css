@@ -920,12 +920,13 @@ input[type="radio"].visually-hidden {
 .popular-link a {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	line-height: 22px;
+	position: relative;
 }
 
 .popular-link a:hover,
 .popular-link a:focus {
-	color: #e84d37;
-	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
+	color: #ffbc9e;
+	border-bottom: 1px solid rgba(255, 188, 158 , 0.2);
 }
 
 /*=== Популярные товары ===*/
