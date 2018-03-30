@@ -716,15 +716,29 @@ input[type="radio"].visually-hidden {
 .modal-close {
 	display: block;
 	position: absolute;
-	background-image: url('../img/delete-icon.png');
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	top: 15px;
-	right: 15px;
-	width: 11px;
-	height: 11px;
+	top: 20px;
+	right: 30px;
 	cursor: pointer;
-	z-index: 3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #323232;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 /*=== Форма обратной связи ===*/
 /*=== Шапка ===*/
