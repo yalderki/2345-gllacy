@@ -922,6 +922,11 @@ input[type="radio"].visually-hidden {
 	line-height: 22px;
 }
 
+.popular-link a:hover,
+.popular-link a:focus {
+	color: #e84d37;
+	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
+}
 
 /*=== Популярные товары ===*/
 
