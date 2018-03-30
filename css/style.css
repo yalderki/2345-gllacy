@@ -181,7 +181,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	width: 84px;
 	height: 8px;
-	background-color: red;
+	background-color: transparent;
 	position: absolute;
 	top: 28px;
 	left: 0px;
@@ -353,7 +353,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	width: 40px;
 	height: 10px;
-	background-color: red;
+	background-color: transparent;
 	position: absolute;
 	top: 28px;
 	right: -2px;
@@ -372,7 +372,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	width: 90px;
 	height: 10px;
-	background-color: red;
+	background-color: transparent;
 	position: absolute;
 	top: 28px;
 	right: -2px;
@@ -1155,7 +1155,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts .wrapper {
-	padding: 0;
+	padding: 0 27px;
 }
 
 .footer-contacts img {
@@ -1186,7 +1186,7 @@ input[type="radio"].visually-hidden {
 	color: #323232;
 	padding: 30px 25px;
 	box-sizing: border-box;
-	//position: absolute;
+/*	//position: absolute;*/
 	right: 0px;
 	top: 62px;
 	margin-top: 62px;
