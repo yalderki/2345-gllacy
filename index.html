@@ -15,7 +15,6 @@
 	<input class="visually-hidden" type="radio" id="product-3" name="toggle">
 	<div class="site-wrapper">
 		<div class="wrapper">
-			<!-- header -->
 			<header class="main-header">
 				<nav class="main-navigation">
 					<a class="main-header-logo"><img src="img/logo.svg" alt="logo" width="154px" height="64px"></a>
@@ -65,7 +64,6 @@
 							</g>
 							</svg>
 						Вход</a>
-						<!-- login form -->
 						<section class="modal modal-login">
 							<h2 class="visually-hidden">Личный кабинет</h2>
 							<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -85,7 +83,6 @@
 							</form>
 						</section>
 					</div>
-					<!-- login form -->
 					<a class="cart-form" href="cart.html">						
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
@@ -99,17 +96,14 @@
 					Пусто</a>
 				</div>
 			</header>
-			<!-- header -->
 			<div class="header-contacts-wrapper">
 				<div class="header-contacts">
 					<span class="contacts-time">С 10 до 20, ежедневно</span>
 					<a href="tel:+78124502525" class="contacts-phone">8&nbsp;812&nbsp;450-25-25</a>
 				</div>
 			</div>
-			<!-- content -->
 			<main class="container">
 				<h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
-				<!-- slider -->
 				<div class="slider">
 					<div class="slider-controls">
 						<label for="product-1">Первый</label>
@@ -131,8 +125,6 @@
 						</li>
 					</ul>
 				</div>
-				<!-- slider -->
-				<!-- actions -->
 				<section class="actions">
 					<h2 class="visually-hidden">Акции</h2>
 					<div class="action-first">
@@ -146,8 +138,6 @@
 						<a href="action-second.html" class="button">Хочу шоколадки!</a>
 					</div>
 				</section>
-				<!-- actions -->
-				<!-- popular items -->
 				<section class="popular-items">
 					<h2 class="visually-hidden">Популярные товары</h2>
 					<ul>
@@ -193,8 +183,6 @@
 						</li>
 					</ul>
 				</section>
-				<!-- popular items -->
-				<!-- content -->
 				<section class="presentation">
 					<div class="presentation-name">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</div>
 					<div class="presentation-container">
@@ -226,8 +214,6 @@
 						</div>
 					</div>
 				</section>
-				<!-- content -->
-				<!-- feedback form -->
 				<section class="modal modal-feedback">
 					<h2>Мы обязательно вам ответим!</h2>
 					<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -246,11 +232,8 @@
 					</form>
 					<button class="modal-close visually-hidden" type="button">Закрыть</button>
 				</section>
-				<!-- feedback form -->
 			</main>
 		</div>
-			<!-- content -->
-			<!-- contacts -->
 			<section class="footer-contacts">
 				<h2 class="visually-hidden">Контактные данные</h2>
 				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae298f3c245c5474c890d933b3e7638afacecadf1428b25ee84da4ffc987eb526&amp;width=100%25&amp;height=429&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -265,13 +248,11 @@
 							<div class="footer-address-item">8 812 450-25-25</div>
 							<div class="footer-address-description">(с 10 до 20 ежедневно)</div>
 						</div>
-						<a href="feedback.html" class="button">Форма обратной связи</a>
+						<a href="feedback.html" class="feedback-button button">Форма обратной связи</a>
 					</div>
 				</div>
 			</section>
-			<!-- contacts -->
 			<div class="wrapper">
-				<!-- footer -->
 				<footer>
 					<ul class="social-links">
 						<li><a class="social-button tw" href="https://twitter.com" target="_blank"><span class="visually-hidden">Twitter</span></a></li>
@@ -298,8 +279,69 @@
 						<div>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML&nbsp;Academy</a> &copy;&nbsp;2017</div>
 					</div>
 				</footer>
-				<!-- footer -->
 			</div>
 		</div>
+		<script>
+			var link = document.querySelector(".feedback-button");
+
+			var popup = document.querySelector(".modal-feedback");
+			var close = popup.querySelector(".modal-close");
+
+			var form = popup.querySelector("feedback-form");
+			var name = popup.querySelector("[name=name]");
+			var email = popup.querySelector("[name=email]");
+			var message = popup.querySelector("[name=feedback-comment]");
+
+			var isStorageSupport = true;
+			var storage = "";
+			  
+			try {
+			  storage = localStorage.getItem("name");
+			} catch (err) {
+			  isStorageSupport = false;
+			}
+
+			link.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.add("modal-show");
+
+				if (storage) {
+      				name.value = storage;
+      				email.focus();
+    			} else {
+      				name.focus();
+    			}
+			});
+
+			close.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.remove("modal-show");
+				popup.classList.remove("modal-error");
+			});
+
+			form.addEventListener("submit", function (evt) {
+				if (!name.value || !email.value || !message.value) {
+     			evt.preventDefault();
+     			popup.classList.remove("modal-error");
+      			popup.offsetWidth = popup.offsetWidth;
+     			popup.classList.add("modal-error");
+      			console.log("Нужно ввести имя, почту и сообщение");
+    			} else {
+    				if (isStorageSupport) {
+    					localStorage.setItem("name", name.value);
+    				}
+    			}
+			});
+
+			window.addEventListener("keydown", function (evt) {
+		    if (evt.keyCode === 27) {
+		      evt.preventDefault();
+		      if (popup.classList.contains("modal-show")) {
+		        popup.classList.remove("modal-show");
+		        popup.classList.remove("modal-error");
+		      }
+		    }
+		  });
+		</script>
 	</body>
 </html>

@@ -447,7 +447,7 @@ input[type="radio"].visually-hidden {
 .modal-login,
 .search-form,
 .modal-feedback {
-/*	display: none;*/
+	display: none;
 	background-color: #f8f7f4;
 }
 
@@ -663,6 +663,55 @@ input[type="radio"].visually-hidden {
 	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
 	background: linear-gradient(#d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 /*=== Форма обратной связи ===*/
 /*=== Шапка ===*/
@@ -1205,6 +1254,20 @@ input[type="radio"].visually-hidden {
 .subscription-item + .button {
 	display: inline;
 }
+
+.subscription .button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.subscription .button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
 /*=== Подписка ===*/
 /*=== Контент ===*/
 
@@ -1286,6 +1349,20 @@ input[type="radio"].visually-hidden {
 	box-sizing: border-box;
 	padding: 12px 20px;
 	border-radius: 25px;
+}
+
+.footer-address-wrapper .button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.footer-address-wrapper .button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 /*=== Контакты ===*/
 
