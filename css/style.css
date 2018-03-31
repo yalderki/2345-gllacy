@@ -386,10 +386,10 @@ input[type="radio"].visually-hidden {
 
 .login-link {
 	padding: 6px 16px 6px 14px;
-	height: 19px;
+/*	height: 19px;*/
 	line-height: 19px;
-	min-width: 60px;
-	text-align: right;
+/*	min-width: 60px;
+	text-align: right;*/
 	transition: all 0.3s ease;
 }
 
@@ -405,10 +405,10 @@ input[type="radio"].visually-hidden {
 
 .cart-form {
 	padding: 6px 32px 6px 16px;
-	height: 19px;
+/*	height: 19px;*/
 	line-height: 19px;
-	min-width: 60px;
-	text-align: right;
+/*	min-width: 60px;*/
+/*	text-align: right;*/
 	transition: all 0.3s ease;
 }
 
@@ -1571,11 +1571,24 @@ footer {
 
 /*=== Страница Каталог ===*/
 /*=== Корзина с товарами ===*/
+.cart-container {
+	position: relative;
+	display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .cart-form.active {
 	font-weight: 500;
 	color: #323232;
 	background-color: #fff;
 	border-radius: 20px;
+	padding: 6px 16px 6px 10px;
+}
+
+.cart-form.active svg {
+	float: none;
 }
 
 .cart-full {
@@ -1590,7 +1603,7 @@ footer {
 	top: 1px;
 }
 
-.cart-form.active:hover ~.cart-full {
+.cart-container:hover .cart-full {
 	display: block;
 }
 
