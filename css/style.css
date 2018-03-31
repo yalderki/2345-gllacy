@@ -1084,7 +1084,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 75px;
 }
 
-.popular-items ul {
+.popular-items ul,
+.catalog-items ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1097,16 +1098,8 @@ input[type="radio"].visually-hidden {
 	margin-bottom: -55px;
 }
 
-.catalog-items ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.popular-item {
+.popular-item,
+.catalog-item {
 	width: 267px;
 	position: relative;
 	box-sizing: border-box;
@@ -1114,19 +1107,10 @@ input[type="radio"].visually-hidden {
 	display: inline-block;
 }
 
-.catalog-item {
-	width: 267px;
-}
-
-.catalog-item:hover {
-	border-radius: 5px;
-	background-color: rgb(254, 254, 254, 0.2);
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
-
 .popular-item-wrapper,
 .catalog-item-wrapper {
 	position: absolute;
+	z-index: 2;
 	top: -5px;
 	left: -14px;
 	width: 294px;
@@ -1155,10 +1139,12 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 	display: none;
 	position: absolute;
+	z-index: 3;
 	width: 182px;
 	margin-left: -110px;
 	margin-bottom: 20px;
 	left: 50%;
+	top: 336px;
 	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
 	background: -o-linear-gradient(#f26843 0%, #e74a35 100%);
 	background: linear-gradient(#f26843 0%, #e74a35 100%);
@@ -1764,6 +1750,10 @@ footer {
 /*=== Хлебные крошки ===*/
 
 /*=== Фильтры ===*/
+.filters {
+	margin-bottom: 34px;
+}
+
 .filter {
 	display: flex;
 	justify-content: space-between;
