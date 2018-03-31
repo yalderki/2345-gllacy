@@ -5,10 +5,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	
 	font-family: 'Roboto', Arial, sans-serif;
 	color: #fff;
-	background-color: #849d8f;
 	font-size: 16px;
 	line-height: 22px;
 }
@@ -1732,7 +1730,7 @@ footer {
 
 .page-title {
 	margin-top: 10px;
-	margin-bottom: 19px;
+	margin-bottom: 35px;
 }
 
 .filters {
@@ -1744,6 +1742,7 @@ footer {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	align-content: space-between;
 	flex-wrap: wrap;
 	position: relative;
 }
@@ -1775,7 +1774,7 @@ footer {
 .sorting-wrapper,
 .pricebar-wrapper,
 .fatness {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	box-sizing: border-box;
 }
 
@@ -1785,13 +1784,21 @@ footer {
 
 .sorting-name,
 .pricebar-name,
-.fatness legend,
-.filling legend {
+.fatness legend {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
 	padding-left: 16px;
 	padding-bottom: 5px;
+	box-sizing: border-box;
+}
+
+.filling legend {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 16px;
+	padding-top: 6px;
 	box-sizing: border-box;
 }
 
@@ -1811,7 +1818,7 @@ footer {
 	background-image: url('../img/select-arrow.svg');
 	
 	position: absolute;
-	top: 52px;
+	top: 36px;
 	left: 167px;
 	
 	width: 11px;
@@ -1909,7 +1916,7 @@ footer {
 }
 
 .fatness {
-	width: 415px;
+	width: 445px;
 	margin-right: -10px;
 	box-sizing: border-box;
 	padding: 0px 16px;
@@ -1930,14 +1937,14 @@ footer {
 	border-radius: 20px;
 	list-style: none;
 	margin: 0;
-	padding: 8px 32px 8px 16px;
+	padding: 8px 32px 8px 12px;
 }
 
 .fatness-wrapper li,
 .filling-wrapper li {
 	display: inline;
-	padding-left: 25px;
-	padding-right: 16px;
+	padding-left: 28px;
+	padding-right: 14px;
 	box-sizing: border-box;
 }
 
@@ -1972,6 +1979,76 @@ footer {
 	border: none;
 }
 
+.checkbox-custom,
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.filter-input-radio:not(:checked) + .radio-custom::before {
+	content: "";
+	background-image: url('../img/radio-off.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 22px;
+	height: 22px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-radio:checked + .radio-custom::before {
+	content: "";
+	background-image: url('../img/radio-on.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 22px;
+	height: 22px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:not(:checked) + .checkbox-custom::before {
+	content: "";
+	background-image: url('../img/checkbox-off.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + .checkbox-custom::before {
+	content: "";
+	background-image: url('../img/checkbox-on.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
 .pagination-list {
 	margin: 0;
@@ -2015,79 +2092,3 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 }
-/*=== Пагинация ===*/
-/*=== Страница Каталог ===*/
-
-
-
-.checkbox-custom,
-.radio-custom,
-.label {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.filter-input-radio:not(:checked) + .radio-custom::before {
-	content: "";
-	background-image: url('../img/radio-off.svg');
-	
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	
-	width: 20px;
-	height: 20px;
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.filter-input-radio:checked + .radio-custom::before {
-	content: "";
-	background-image: url('../img/radio-on.svg');
-	
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	
-	width: 20px;
-	height: 20px;
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.filter-input-checkbox:not(:checked) + .checkbox-custom::before {
-	content: "";
-	background-image: url('../img/checkbox-off.svg');
-	
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	
-	width: 20px;
-	height: 20px;
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.filter-input-checkbox:checked + .checkbox-custom::before {
-	content: "";
-	background-image: url('../img/checkbox-on.svg');
-	
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	
-	width: 20px;
-	height: 20px;
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
