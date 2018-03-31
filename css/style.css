@@ -1611,7 +1611,7 @@ footer {
 
 .social-button.tw::before {
 	content: "";
-	background-image: url('../img/twitter-icon.svg');
+	background-image: url('../img/twitter.svg');
 	
 	position: absolute;
 	top: 35px;
@@ -1633,7 +1633,7 @@ footer {
 }
 
 .social-button.vk {
-	background-image: url('../img/vk-icon.svg');
+	background-image: url('../img/vk.svg');
 }
 
 .social-button:hover {
@@ -1730,6 +1730,7 @@ footer {
 
 .page-title {
 	margin-top: 10px;
+	margin-bottom: 35px;
 }
 
 .filters {
@@ -1737,25 +1738,92 @@ footer {
 }
 
 .filter {
+	width: 880px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
+.sorting-wrapper,
+.price-wrapper,
+.fatness,
+.filling {
+	box-sizing: border-box;
+}
+
+.sorting-wrapper {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.sorting-wrapper select {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding: 6px 16px 6px 16px;
+	position: relative;
+	-webkit-appearance: none;
+}
+
+.sorting-wrapper select::before {
+	content: "";
+	background-image: url('../img/select-arrow.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 100px;
+	height: 100px;
+
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.sorting-wrapper option {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #323232;
+}
+
+.sorting-wrapper option:hover,
+.sorting-wrapper option:focus,
+.sorting-wrapper option:active {
+	background-color: #1e90ff;
+	color: #fff;
+}
+
+
+
 .filter fieldset {
 	border: none;
 }
 
-.filter-name,
+.sorting-name,
+.price-name,
 .filter legend {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
+	padding-left: 16px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
 }
 
-.filter select,
-.slider-pricebar,
+.slider-pricebar {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+}
+
 .filter-button {
 	color: #fff;
 	font-weight: 500;
@@ -1777,7 +1845,8 @@ footer {
 	width: 700px;
 }
 
-.filter-wrapper {
+.fatness-wrapper,
+.filling-wrapper {
 	color: #fff;
 	font-weight: 500;
 	font-size: 16px;
@@ -1789,7 +1858,8 @@ footer {
 	padding: 0;
 }
 
-.filter-wrapper li {
+.fatness-wrapper li,
+.filling-wrapper li {
 	display: inline;
 }
 
