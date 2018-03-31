@@ -168,7 +168,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-	width: 370px;
+/*	width: 370px;*/
 	position: relative;
 }
 
@@ -217,8 +217,11 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 }
 
-.site-navigation-link:focus {
-	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+.site-navigation-item:active {
+	color: #333333;	
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
 }
 
 .site-navigation-link.active {
@@ -228,6 +231,14 @@ input[type="radio"].visually-hidden {
 	border: transparent;
 	color: #fff;
 	font-weight: 500;
+}
+
+.site-navigation-item.current {
+	padding: 0;
+}
+
+.site-navigation-item.current:hover>a {
+	color: #fff;
 }
 
 /*=== Основное меню ===*/
@@ -264,6 +275,14 @@ input[type="radio"].visually-hidden {
 	background-color: #f6b5a5;
 }
 
+.catalog-navigation-item:active {
+	background-color: #d07058;
+}
+
+.catalog-navigation-item:active>a {
+	color: #fff;
+}
+
 .catalog-navigation-item.first {
 	border-bottom: 1px solid rgba(51, 51, 51, 0.2);
 	transition: all 0.3s ease;
@@ -285,6 +304,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-navigation-link {
 	color: #323232;
+	font-weight: 400;
 }
 
 .first>.catalog-navigation-link {
@@ -1564,6 +1584,7 @@ footer {
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	display: none;
+	width: 540px;
 	padding: 20px 15px;
 	z-index: 1;
 	top: 1px;
@@ -1573,21 +1594,29 @@ footer {
 	display: block;
 }
 
-.cart-full:hover {
+/* .cart-full:hover {
 	display: block;
-}
+} */
 
 .cart-items {
 	color: #323232;
 	font-size: 13px;
 	line-height: 16px;
 	border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-	display: table;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 	width: 540px;
 }
 
 .cart-item {
-	display: table-row;
+/*	display: table-row;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
 	margin-bottom: 15px;
 }
 
@@ -1595,7 +1624,7 @@ footer {
 .cart-item-name,
 .cart-item-volume,
 .cart-item-price {
-	display: table-cell;
+/*	display: table-cell;*/
 	vertical-align: middle;
 }
 
