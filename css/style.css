@@ -1577,6 +1577,7 @@ footer {
     list-style: none;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cart-form.active {
@@ -1584,11 +1585,21 @@ footer {
 	color: #323232;
 	background-color: #fff;
 	border-radius: 20px;
-	padding: 6px 16px 6px 10px;
+	padding: 6px 16px 6px 14px;
 }
 
-.cart-form.active svg {
-	float: none;
+.cart-form.active::after {
+	content: "";
+	width: 120px;
+	height: 10px;
+	background-color: transparent;
+	position: absolute;
+	top: 28px;
+	right: -2px;
+}
+
+.cart-container:hover .cart-full {
+	display: block;
 }
 
 .cart-full {
@@ -1600,16 +1611,10 @@ footer {
 	width: 540px;
 	padding: 20px 15px;
 	z-index: 1;
-	top: 1px;
+	top: 35px;
+	right: 0px;
+	box-sizing: border-box;
 }
-
-.cart-container:hover .cart-full {
-	display: block;
-}
-
-/* .cart-full:hover {
-	display: block;
-} */
 
 .cart-items {
 	color: #323232;
@@ -1620,41 +1625,43 @@ footer {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-start;
-	width: 540px;
 }
 
 .cart-item {
-/*	display: table-row;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	margin-bottom: 15px;
-}
-
-.cart-item-photo,
-.cart-item-name,
-.cart-item-volume,
-.cart-item-price {
-/*	display: table-cell;*/
-	vertical-align: middle;
+	align-content: flex-end;
+	margin-bottom: 19px;
 }
 
 .cart-item-photo {
-	margin-right: 23px;
+	padding-left: 27px;
+	padding-right: 13px;
+	box-sizing: border-box;
+	position: relative;
 }
 
-/*.cart-item-name {
-	width: 315px;
-}*/
+.cart-item-name {
+	margin-right: 30px;
+	width: 216px;
+}
+
+.cart-item-volume {
+	margin-right: 26px;
+}
 
 .cart-item-photo::before {
-	content: url('../img/delete-icon.png');
-	display: inline-block;
-    vertical-align: middle;
+	content: "";
+	background-image: url('../img/delete-icon.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	position: absolute;
 	width: 15px;
 	height: 15px;
+	top: 10px;
+	left: 0px;
 }
 
 .cart-item-volume
@@ -1672,12 +1679,28 @@ footer {
 	font-size: 15px;
 	line-height: 18px;
 	text-align: right;
-	margin: 12px 0;
+	margin: 14px 0;
 }
 
 .cart-buy {
 	float: right;
+	padding: 10px 15px;
 }
+
+.cart-buy .button:hover {
+	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
+	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.cart-buy .button:active {
+	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
+	background: linear-gradient(#d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 /*=== Корзина с товарами ===*/
 
 /*=== Хлебные крошки ===*/
