@@ -1746,6 +1746,23 @@ footer {
 	position: relative;
 }
 
+.filter select:hover {
+	color: #323232;
+}
+
+.filter-button {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+}
+
+.filter fieldset {
+	border: none;
+}
+
 .sorting-wrapper,
 .pricebar-wrapper,
 .fatness,
@@ -1754,8 +1771,21 @@ footer {
 }
 
 .sorting-wrapper,
-.pricebar-wrapper {
+.pricebar-wrapper,
+.fatness {
 	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+.sorting-name,
+.pricebar-name,
+.fatness legend,
+.filling legend {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 16px;
+	padding-bottom: 5px;
 	box-sizing: border-box;
 }
 
@@ -1810,65 +1840,58 @@ footer {
 	-webkit-appearance: none;
 }
 
-
 .pricebar-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-  
-  /* Для демонстрации */
-  width: 218px;
-/*  margin: 50px auto;*/ 
+	margin: 0;
+	padding: 0;
+	border: none;
 }
 
 .range-filter {
-  width: 260px;
-/*  margin-top: 49px;*/
+	width: 260px;
 }
 
 .pricebar-item legend {
-	color: #fff;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 16px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
 }
 
 .range-pricebar-controls {
-  position: relative;
-  height: 20px;
-/*  margin-bottom: 15px;*/
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
+	position: relative;
+	height: 20px;
+	padding: 16px 16px 0px 16px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
 }
 
 .range-pricebar-controls .scale {
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.4);
+	height: 4px;
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 .range-pricebar-controls .bar {
-  width: 78px;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.8);
+	width: 78px;
+	height: 4px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-left: 20%;
+	width: 30%
 }
 
 .range-pricebar-controls .toggle {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  
-  width: 4px;
-  height: 4px;
-  padding: 0;
-
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  border-radius: 50%;
-  cursor: pointer;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .range-pricebar-controls .toggle-min {
@@ -1882,45 +1905,10 @@ footer {
 
 
 
-.filter fieldset {
-	border: none;
-}
 
-.sorting-name,
-.pricebar-name,
-.filter legend {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 16px;
-	padding-left: 16px;
-	padding-bottom: 5px;
-	box-sizing: border-box;
-}
-
-.slider-pricebar {
-	color: #fff;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
-}
-
-.filter-button {
-	color: #fff;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
-}
-
-.filter select:hover {
-	color: #323232;
-}
 
 .fatness {
-	width: 410px;
+	width: 415px;
 }
 
 .fillings {
@@ -1937,7 +1925,7 @@ footer {
 	border-radius: 20px;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 8px 32px 8px 16px;
 }
 
 .fatness-wrapper li,
@@ -1948,6 +1936,8 @@ footer {
 .filter-input:hover + label {
 	color: #323232;
 }
+
+
 
 .filter-button {
 	background-image: none;
