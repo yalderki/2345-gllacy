@@ -1728,6 +1728,10 @@ footer {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
+.page-title {
+	margin-top: 10px;
+}
+
 .filters {
 	margin-bottom: 34px;
 }
