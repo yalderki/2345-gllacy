@@ -1,9 +1,3 @@
-/*
-focus - нажатие
-active - находимся на странице
-*/
-
-/*=== Глобальные стили ===*/
 /** {
 	outline: 1px solid purple;
 }*/
@@ -91,15 +85,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*=== Глобальные стили ===*/
-
-.wrapper {
-	margin: 0 auto;
-	padding: 8px 27px 0 27px;
-	width: 1200px;
-	box-sizing: border-box;
-	position: relative;
-}
 
 .site-wrapper {
 	min-width: 940px;
@@ -126,7 +111,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-item3.png");
 }
 
-/*=== Шапка ===*/
+.wrapper {
+	margin: 0 auto;
+	padding: 8px 27px 0 27px;
+	width: 1200px;
+	box-sizing: border-box;
+	position: relative;
+}
+
 .main-header {
 	display: flex;
 	flex-wrap: wrap;
@@ -168,7 +160,6 @@ input[type="radio"].visually-hidden {
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-/*	width: 370px;*/
 	position: relative;
 }
 
@@ -241,9 +232,6 @@ input[type="radio"].visually-hidden {
 	color: #fff;
 }
 
-/*=== Основное меню ===*/
-/*=== Выпадающее меню ===*/
-
 .catalog-navigation {
 	font-size: 14px;
 	line-height: 16px;
@@ -297,7 +285,7 @@ input[type="radio"].visually-hidden {
 .catalog-navigation-item.last:focus {
 	border-radius: 0 0 5px 5px;
 }
-/*как настроить отступы для подчеркивания по краям?*/
+
 .catalog-navigation-item.active {
 	background-color: #d07058;
 }
@@ -314,9 +302,7 @@ input[type="radio"].visually-hidden {
 .active .catalog-navigation-link {
 	color: #fff;
 }
-/*=== Выпадающее меню ===*/
 
-/*=== Кнопки в шапке ===*/
 .header-actions {
 	display: flex;
 	flex-wrap: wrap;
@@ -473,7 +459,7 @@ input[type="radio"].visually-hidden {
 	display: none;
 	width: 540px;
 	padding: 20px 15px;
-	z-index: 1;
+	z-index: 5;
 	top: 35px;
 	right: 0px;
 	box-sizing: border-box;
@@ -584,9 +570,7 @@ input[type="radio"].visually-hidden {
 	font-size: 22px;
 	line-height: 24px;
 }
-/*=== Кнопки в шапке ===*/
 
-/*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 .modal-login,
 .search-form,
 .modal-feedback {
@@ -677,9 +661,7 @@ input[type="radio"].visually-hidden {
 .modal-login input[type="password"]:focus {
 	font-weight: 700;
 }
-/*=== Форма входа, Форма поиска, Форма обратной связи ===*/
 
-/*=== Форма входа ===*/
 .login-form p {
 	margin-top: 0;
 }
@@ -731,10 +713,7 @@ input[type="radio"].visually-hidden {
 	color: #e84d37;
 	border-bottom: 1px solid rgba(232, 77, 55 , 0.2);
 } 
-/*как сделать жирным вводимые данные?*/
-/*=== Форма входа ===*/
-	
-/*=== Форма обратной связи ===*/
+
 .modal-feedback {
 	padding: 22px 26px;
 	border-radius: 10px;
@@ -883,10 +862,48 @@ input[type="radio"].visually-hidden {
 .modal-close::after {
   transform: rotate(-45deg);
 }
-/*=== Форма обратной связи ===*/
-/*=== Шапка ===*/
 
-/*=== Слайдер ===*/
+.inner .container {
+	margin-top: 25px;
+}
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.breadcrumbs li {
+	margin-right: 5px;
+}
+
+.breadcrumbs li:not(.breadcrumbs-current)::after {
+    content: "»";
+    margin: 0 3px 0 6px;
+}
+
+.breadcrumbs a {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: #ffbc9e;
+}
+
+.breadcrumbs-current span {
+	font-size: 14px;
+	line-height: 16px;
+	border-bottom: 1px solid transparent;
+}
+
 .slider {
 	margin-bottom: 43px;
 	position: relative;
@@ -1711,45 +1728,6 @@ footer {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
-
-
-/*=== Корзина с товарами ===*/
-
-/*=== Хлебные крошки ===*/
-.breadcrumbs {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	margin-bottom: 5px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-}
-
-.breadcrumbs li {
-	margin-right: 20px;
-}
-
-.breadcrumbs a {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-	color: #ffbc9e;
-}
-
-.breadcrumbs-current span {
-	font-size: 14px;
-	line-height: 16px;
-	border-bottom: 1px solid transparent;
-}
-/*=== Хлебные крошки ===*/
-
-/*=== Фильтры ===*/
 .filters {
 	margin-bottom: 34px;
 }
@@ -1833,15 +1811,8 @@ footer {
 	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 	border: none;
 }
-/*=== Фильтры ===*/
 
 
-/*=== Каталог товаров ===*/
-
-/* === Каталог товаров ===
-
-
-/*=== Пагинация ===*/
 .pagination-list {
 	margin: 0;
 	padding: 0;
