@@ -1732,7 +1732,7 @@ footer {
 
 .page-title {
 	margin-top: 10px;
-	margin-bottom: 35px;
+	margin-bottom: 19px;
 }
 
 .filters {
@@ -1742,7 +1742,7 @@ footer {
 .filter {
 	width: 880px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
@@ -1779,6 +1779,10 @@ footer {
 	box-sizing: border-box;
 }
 
+.sorting-wrapper {
+	margin-right: 12px;
+}
+
 .sorting-name,
 .pricebar-name,
 .fatness legend,
@@ -1807,12 +1811,12 @@ footer {
 	background-image: url('../img/select-arrow.svg');
 	
 	position: absolute;
-	top: 35px;
-	left: 170px;
+	top: 52px;
+	left: 167px;
 	
-	width: 10px;
-	height: 11px;
-
+	width: 11px;
+	height: 15px;
+	background-size: 110%;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -1849,7 +1853,8 @@ footer {
 }
 
 .range-filter {
-	width: 260px;
+	width: 219px;
+	box-sizing: border-box;
 }
 
 .pricebar-item legend {
@@ -1864,7 +1869,7 @@ footer {
 .range-pricebar-controls {
 	position: relative;
 	height: 20px;
-	padding: 16px 16px 0px 16px;
+	padding: 16px 20px 0px 22px;
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 }
@@ -1878,14 +1883,13 @@ footer {
 	width: 78px;
 	height: 4px;
 	background-color: rgba(255, 255, 255, 0.8);
-	margin-left: 20%;
-	width: 30%
+	margin-left: 15%;
+	width: 50%;
 }
 
 .range-pricebar-controls .toggle {
 	position: absolute;
 	top: 8px;
-	left: 0;
 	width: 4px;
 	height: 4px;
 	padding: 0;
@@ -1897,20 +1901,18 @@ footer {
 }
 
 .range-pricebar-controls .toggle-min {
-  left: 22px;
+  left: 36px;
 }
 
 .range-pricebar-controls .toggle-max {
-  left: 120px;
+  left: 134px;
 }
-
-
-
-
-
 
 .fatness {
 	width: 415px;
+	margin-right: -10px;
+	box-sizing: border-box;
+	padding: 0px 16px;
 }
 
 .filling {
