@@ -91,15 +91,13 @@ input[type="radio"].visually-hidden {
 	background-color: #849d8f;
 	background-image: url("img/slider-item1.png");
 	background-repeat: no-repeat;
-	background-position: top center;
-	
+	background-position: top center;	
 	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -109,6 +107,10 @@ input[type="radio"].visually-hidden {
 
 .site-wrapper::after {
   background-image: url("../img/slider-item3.png");
+}
+
+.site-wrapper.inner {
+	background-image: linear-gradient(to bottom, #9db1a5, #849d8f);
 }
 
 .wrapper {
@@ -1911,8 +1913,9 @@ footer {
 	width: 415px;
 }
 
-.fillings {
+.filling {
 	width: 700px;
+	margin-left: -10px;
 }
 
 .fatness-wrapper,
@@ -1931,13 +1934,22 @@ footer {
 .fatness-wrapper li,
 .filling-wrapper li {
 	display: inline;
+	padding-left: 25px;
+	padding-right: 16px;
+	box-sizing: border-box;
 }
 
 .filter-input:hover + label {
 	color: #323232;
 }
 
+.fatness .filter-option {
+	position: relative;
+}
 
+.filling .filter-option {
+	position: relative;
+}
 
 .filter-button {
 	background-image: none;
@@ -2003,4 +2015,77 @@ footer {
 }
 /*=== Пагинация ===*/
 /*=== Страница Каталог ===*/
+
+
+
+.checkbox-custom,
+.radio-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.filter-input-radio:not(:checked) + .radio-custom::before {
+	content: "";
+	background-image: url('../img/radio-off.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-radio:checked + .radio-custom::before {
+	content: "";
+	background-image: url('../img/radio-on.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:not(:checked) + .checkbox-custom::before {
+	content: "";
+	background-image: url('../img/checkbox-off.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + .checkbox-custom::before {
+	content: "";
+	background-image: url('../img/checkbox-on.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 20px;
+	height: 20px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
 
