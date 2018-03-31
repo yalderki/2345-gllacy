@@ -2,14 +2,14 @@
 	var popup = document.querySelector(".modal-feedback");
 	var close = popup.querySelector(".modal-close");
 	var form = popup.querySelector(".feedback-form");
-	var name = popup.querySelector("[name=username]");
-	var email = popup.querySelector("[name=email]");
-	var message = popup.querySelector("[name=feedback-comment]");
+	var feedbackname = popup.querySelector("[name=feedbackname]");
+	var feedbackemail = popup.querySelector("[name=feedbackemail]");
+	var feedbackcomment = popup.querySelector("[name=feedbackcomment]");
 	var isStorageSupport = true;
 	var storage = "";
 	  
 	try {
-	  storage = localStorage.getItem("username");
+	  storage = localStorage.getItem("feedbackname");
 	} catch (err) {
 	  isStorageSupport = false;
 	}
@@ -17,10 +17,10 @@
 		evt.preventDefault();
 		popup.classList.add("modal-show");
 		if (storage) {
-			username.value = storage;
-			email.focus();
+			feedbackname.value = storage;
+			feedbackemail.focus();
 		} else {
-			username.focus();
+			feedbackname.focus();
 		}
 	});
 	close.addEventListener("click", function (evt) {
@@ -29,15 +29,15 @@
 		popup.classList.remove("modal-error");
 	});
 	form.addEventListener("submit", function (evt) {
-		if (!username.value || !email.value || !feedback-comment.value) {
+		if (!feedbackname.value || !feedbackemail.value || !feedbackcomment.value) {
    			evt.preventDefault();
    			popup.classList.remove("modal-error");
-    			popup.offsetWidth = popup.offsetWidth;
+   			popup.offsetWidth = popup.offsetWidth;
    			popup.classList.add("modal-error");
-    			console.log("Нужно ввести имя, почту и сообщение");
+    			//console.log("Нужно ввести имя, почту и сообщение");
   			} else {
   				if (isStorageSupport) {
-  					localStorage.setItem("username", username.value);
+  					localStorage.setItem("feedbackname", feedbackname.value);
   				}
   			}
 	});
