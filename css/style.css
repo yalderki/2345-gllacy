@@ -1771,6 +1771,7 @@ footer {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 	width: 267px;
+	position: relative;
 }
 
 .social-links li {
@@ -1779,43 +1780,56 @@ footer {
 
 .social-button {
 	display: block;
-	background-color: rgba(255, 255, 255, .5);
+/*	background-color: rgba(255, 255, 255, .8);*/
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	width: 32px;
-	height: 32px;
-	border-radius: 20px;
-	border: 2px solid rgba(255, 255, 255, .5);
+	height: 32px;	
 }
 
-.social-button.tw::before {
-	content: "";
-	background-image: url('../img/twitter.svg');
-	
+.social-button svg {
 	position: absolute;
-	top: 35px;
-	left: 30px;
-	
-	width: 34px;
-	height: 34px;
-	
-	background-repeat: no-repeat;
-	background-position: 0 0;
+    top: 23px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    transform: translate(-50%,-50%);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.social-button.ig {
-	background-image: url('../img/instagram-icon.svg');
+.tw svg {
+	left: 20px;
 }
 
-.social-button.fb {
-	background-image: url('../img/fb-icon.svg');
+.ig svg {
+	left: 69px;
 }
 
-.social-button.vk {
-	background-image: url('../img/vk.svg');
+.fb svg {
+	left: 118px;
 }
 
-.social-button:hover {
+.vk svg {
+	left: 167px;
+}
+
+.social-button path {
+	fill: rgba(255, 255, 255, .8);
+}
+
+.social-button:hover path {
+	fill: rgba(255, 255, 255, 1);
+}
+
+.social-button:active path {
+	fill: rgba(255, 255, 255, 0.8);
+}
+
+
+/* .social-button:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 	border: 2px solid rgba(255, 255, 255, 0.9);
 }
@@ -1824,7 +1838,7 @@ footer {
 .social-button:active, {
 	background-color: rgba(255, 255, 255, .5);
 	border: 2px solid rgba(255, 255, 255, .5);
-}
+} */
 
 .footer-navigation-container {
 	display: -webkit-box;
