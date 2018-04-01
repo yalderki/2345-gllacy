@@ -1366,6 +1366,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-link {
 	margin: 8px 0 12px 0;
 	text-align: center;
+	padding: 0 5px;
 }
 
 .popular-link a,
@@ -1534,11 +1535,8 @@ input[type="radio"].visually-hidden {
 .blog-preview a:active,
 .blog-preview a:focus {
 	color: #e84d37;
-	/*border-bottom: 1px solid rgba(232, 77, 55 , 0.2);*/
 }
-/*=== Блог ===*/
 
-/*=== Подписка ===*/
 .subscription-wrapper {
 	background-image: -webkit-repeating-linear-gradient(
 		315deg, 
@@ -1738,7 +1736,8 @@ input[type="radio"].visually-hidden {
 /*=== Контакты ===*/
 
 .inner footer {
-	border-top: 1px solid rgba(255, 255, 255, 0.2)
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	padding-top: 20px;
 }
 
 footer {
