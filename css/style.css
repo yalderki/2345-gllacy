@@ -1045,30 +1045,30 @@ input[type="radio"].visually-hidden {
 	background-color: rgba(255, 255, 255, 0.4);
 }
 
-#product-1:checked ~ .site-wrapper {
+.product-1:checked ~ .site-wrapper {
 	background-color: #849d8f;
 	background-image: url("../img/slide-1.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+.product-2:checked ~ .site-wrapper {
 	background-color: #8996a6;
 	background-image: url("../img/slide-2.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+.product-3:checked ~ .site-wrapper {
 	background-color: #9d8b84;
 	background-image: url("../img/slide-3.png");
 }
 
-#product-1:checked ~ .site-wrapper #slide-1,
-#product-2:checked ~ .site-wrapper #slide-2,
-#product-3:checked ~ .site-wrapper #slide-3 {
+.product-1:checked ~ .site-wrapper .slide-1,
+.product-2:checked ~ .site-wrapper .slide-2,
+.product-3:checked ~ .site-wrapper .slide-3 {
 	display: block;
 }
 
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+.product-1:checked ~ .site-wrapper label[for="product-1"],
+.product-2:checked ~ .site-wrapper label[for="product-2"],
+.product-3:checked ~ .site-wrapper label[for="product-3"] {
 	background-color: #ffffff;
 }
 
