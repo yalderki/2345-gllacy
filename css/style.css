@@ -2014,21 +2014,9 @@ footer {
 	background-position: 0 0;
 }
 
-.filter-input-radio:not(:checked) + .radio-custom::before:hover {
-	content: "";
+/* .filter-option:hover .filter-input-radio:not(:checked) + .radio-custom::before {
 	background-image: url('../img/radio-off-hover.svg');
-	
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	
-	width: 22px;
-	height: 22px;
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
+} */
 
 .filter-input-radio:checked + .radio-custom::before {
 	content: "";
@@ -2046,21 +2034,10 @@ footer {
 	background-position: 0 0;
 }
 
-.filter-input-radio:checked + .radio-custom::before:hover {
-	content: "";
+/* .filter-option:hover .filter-input-radio:checked + .radio-custom::before {
+
 	background-image: url('../img/radio-on-hover.svg');
-	
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	
-	width: 22px;
-	height: 22px;
-	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
+} */
 
 .filter-input-checkbox:not(:checked) + .checkbox-custom::before {
 	content: "";
