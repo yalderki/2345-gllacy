@@ -1230,7 +1230,7 @@ input[type="radio"].visually-hidden {
 } */
 
 .catalog-items {
-	margin-bottom: 122px;
+	margin-bottom: 98px;
 }
 
 .popular-items ul,
@@ -2278,23 +2278,24 @@ footer {
 	background-image: url('../img/checkbox-on-hover.svg');
 }
 
+.pagination-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
 .pagination-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	margin-bottom: 30px;
+	width: 192px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	-webkit-box-align: end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
-}
-
-.pagination-list li {
-	display: inline-block;
-	vertical-align: ;
+	justify-content: space-between;
 }
 
 .pagination-list a {
@@ -2303,10 +2304,12 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
+	vertical-align: middle;
+	border-radius: 50px;
 	width: 25px;
-	padding-top: 4px;
-	padding-bottom: 2px; 
-	border-radius: 50%;
+	box-sizing: border-box;
+	padding: 5px 1px 3px;
+	border-radius: 50px;	
 }
 
 .pagination-list a:hover {
@@ -2324,4 +2327,22 @@ footer {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.prev svg {
+	margin-right: 10px;
+}
+
+.next svg {
+	margin-left: 15px;
+}
+
+.pagination-item .prev,
+.pagination-item .next,
+.pagination-item .prev:hover,
+.pagination-item .next:hover,
+.pagination-item .prev:focus,
+.pagination-item .next:focus {
+	background-color: transparent;
+	padding-top: 6px;
 }
