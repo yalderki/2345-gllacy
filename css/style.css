@@ -21,8 +21,6 @@ img {
 
 button {
 	cursor: pointer;
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .button {
@@ -46,8 +44,6 @@ button {
 		rgb(242, 104, 67) 100%
 	);
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .visually-hidden {
@@ -726,8 +722,6 @@ input[type="radio"].visually-hidden {
 	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
 	background: linear-gradient(#f26843 0%, #e74a35 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
 }
 
 .login-form .button:hover {
