@@ -43,7 +43,7 @@ button {
 	transition: all 0.3s ease;
 }
 
-.button:hover {
+/* .button:hover {
 	background-image: linear-gradient(to bottom, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
 	color: #fff;
@@ -53,7 +53,7 @@ button {
 	background-image: linear-gradient(to bottom, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 	color: #fff;
-}
+} */
 
 .visually-hidden {
 	position: absolute;
@@ -536,14 +536,14 @@ input[type="radio"].visually-hidden {
 	padding: 10px 15px;
 }
 
-.cart-buy .button:hover {
+.cart-buy:hover {
 	background: -webkit-linear-gradient(#f58669 0%, #ec6f5e 100%);
 	background: -o-linear-gradient(#f58669 0%, #ec6f5e 100%);
 	background: linear-gradient(#f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.cart-buy .button:active {
+.cart-buy:active {
 	background: -webkit-linear-gradient(#d84732 0%, #e1613e 100%);
 	background: -o-linear-gradient(#d84732 0%, #e1613e 100%);
 	background: linear-gradient(#d84732 0%, #e1613e 100%);
@@ -1751,15 +1751,6 @@ footer {
 	color: #323232;
 }
 
-.filter-button {
-	color: #fff;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 18px;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 20px;
-}
-
 .filter fieldset {
 	border: none;
 }
@@ -1767,7 +1758,8 @@ footer {
 .sorting-wrapper,
 .pricebar-wrapper,
 .fatness,
-.filling {
+.filling,
+.filling-wrapper {
 	box-sizing: border-box;
 }
 
@@ -1797,7 +1789,7 @@ footer {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 16px;
-	padding-left: 16px;
+	padding-left: 14px;
 	padding-top: 6px;
 	box-sizing: border-box;
 }
@@ -1925,6 +1917,8 @@ footer {
 .filling {
 	width: 700px;
 	margin-left: -10px;
+	margin-right: -2px;
+	padding: 5px 12px 0px;
 }
 
 .fatness-wrapper,
@@ -1936,16 +1930,27 @@ footer {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	list-style: none;
-	margin: 0;
+	margin: 2px 0 0 0;
 	padding: 8px 32px 8px 12px;
+}
+
+.filling-wrapper {
+	width: 702px;
 }
 
 .fatness-wrapper li,
 .filling-wrapper li {
 	display: inline;
 	padding-left: 28px;
-	padding-right: 14px;
 	box-sizing: border-box;
+}
+
+.fatness-wrapper li {
+	padding-right: 14px;
+}
+
+.filling-wrapper li {
+	padding-right: 16px;
 }
 
 .filter-input:hover + label {
@@ -1961,11 +1966,19 @@ footer {
 }
 
 .filter-button {
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	border-radius: 20px;
 	background-image: none;
-	border-style: solid;
+	box-shadow: none;
+	background-color: rgba(255, 255, 255, 0.2);
 	border-width: 2px;
+	border-style: solid;
 	border-color: rgb(255, 255, 255);
-	padding: 7px 25px;
+	padding: 7px 28px;
+	align-self: flex-end;
 }
 
 .filter-button:hover {
@@ -1973,10 +1986,9 @@ footer {
 	color: #323232;
 }
 
-.filter-button:focus {
+.filter-button:active {
 	background-color: rgb(237, 237, 237);
 	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-	border: none;
 }
 
 .checkbox-custom,
@@ -1989,6 +2001,22 @@ footer {
 .filter-input-radio:not(:checked) + .radio-custom::before {
 	content: "";
 	background-image: url('../img/radio-off.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 22px;
+	height: 22px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-input-radio:not(:checked) + .radio-custom::before:hover {
+	content: "";
+	background-image: url('../img/radio-off-hover.svg');
 	
 	position: absolute;
 	top: 0px;
@@ -2018,16 +2046,32 @@ footer {
 	background-position: 0 0;
 }
 
+.filter-input-radio:checked + .radio-custom::before:hover {
+	content: "";
+	background-image: url('../img/radio-on-hover.svg');
+	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	width: 22px;
+	height: 22px;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
 .filter-input-checkbox:not(:checked) + .checkbox-custom::before {
 	content: "";
 	background-image: url('../img/checkbox-off.svg');
 	
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 5px;
 	
-	width: 20px;
-	height: 20px;
+	width: 22px;
+	height: 22px;
 	
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -2040,10 +2084,10 @@ footer {
 	
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 3px;
 	
-	width: 20px;
-	height: 20px;
+	width: 24px;
+	height: 24px;
 	
 	background-size: 100%;
 	background-repeat: no-repeat;
