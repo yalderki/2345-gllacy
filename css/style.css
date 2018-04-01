@@ -1097,8 +1097,12 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 30px;
 }
 
+/* .catalog-list {
+	margin-bottom: 25px;
+} */
+
 .catalog-items {
-	margin-bottom: 75px;
+	margin-bottom: 122px;
 }
 
 .popular-items ul,
@@ -1122,6 +1126,10 @@ input[type="radio"].visually-hidden {
 	box-sizing: border-box;
 	position: relative;
 	display: inline-block;
+}
+
+.catalog-item {
+	margin-bottom: 25px;
 }
 
 .popular-item-wrapper,
@@ -1471,10 +1479,7 @@ input[type="radio"].visually-hidden {
 	background: linear-gradient(#d84732 0%, #e1613e 100%);
 	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
-/*=== Подписка ===*/
-/*=== Контент ===*/
 
-/*=== Контакты ===*/
 .footer-contacts {
 	position: relative;
 	min-height: 429px;
@@ -1569,10 +1574,9 @@ input[type="radio"].visually-hidden {
 }
 /*=== Контакты ===*/
 
-/*=== Футер ===*/
-/* inner footer {
+.inner footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.2)
-} */
+}
 
 footer {
 	display: flex;
@@ -1581,12 +1585,11 @@ footer {
 	align-items: center;
 	padding: 14px 0;
 }
-/*=== Социальные сети ===*/
+
 .social-links {
 	margin: 0;
 	padding: 0;
 	list-style: none; 
-/*	margin-right: 115px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -1734,7 +1737,7 @@ footer {
 }
 
 .filters {
-	margin-bottom: 34px;
+	margin-bottom: 40px;
 }
 
 .filter {
@@ -1932,6 +1935,7 @@ footer {
 	list-style: none;
 	margin: 2px 0 0 0;
 	padding: 8px 32px 8px 12px;
+	box-sizing: border-box;	
 }
 
 .filling-wrapper {
@@ -1971,6 +1975,7 @@ footer {
 	font-size: 16px;
 	line-height: 18px;
 	border-radius: 20px;
+	box-sizing: border-box;
 	background-image: none;
 	box-shadow: none;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -1989,6 +1994,7 @@ footer {
 .filter-button:active {
 	background-color: rgb(237, 237, 237);
 	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+	border: none;
 }
 
 .checkbox-custom,
@@ -2014,9 +2020,9 @@ footer {
 	background-position: 0 0;
 }
 
-/* .filter-option:hover .filter-input-radio:not(:checked) + .radio-custom::before {
+.filter-input-radio:not(:checked) + .radio-custom:hover::before {
 	background-image: url('../img/radio-off-hover.svg');
-} */
+}
 
 .filter-input-radio:checked + .radio-custom::before {
 	content: "";
@@ -2034,10 +2040,9 @@ footer {
 	background-position: 0 0;
 }
 
-/* .filter-option:hover .filter-input-radio:checked + .radio-custom::before {
-
+.filter-input-radio:checked + .radio-custom:hover::before {
 	background-image: url('../img/radio-on-hover.svg');
-} */
+}
 
 .filter-input-checkbox:not(:checked) + .checkbox-custom::before {
 	content: "";
@@ -2055,6 +2060,10 @@ footer {
 	background-position: 0 0;
 }
 
+.filter-input-checkbox:not(:checked) + .checkbox-custom:hover::before {
+	background-image: url('../img/checkbox-off-hover.svg');
+}
+
 .filter-input-checkbox:checked + .checkbox-custom::before {
 	content: "";
 	background-image: url('../img/checkbox-on.svg');
@@ -2069,6 +2078,10 @@ footer {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + .checkbox-custom:hover::before {
+	background-image: url('../img/checkbox-on-hover.svg');
 }
 
 .pagination-list {
