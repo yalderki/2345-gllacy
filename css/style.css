@@ -70,7 +70,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-wrapper {
-	min-width: 940px;
+	min-width: 1200px;
 	background-color: #849d8f;
 	background-image: url("img/slider-item1.png");
 	background-repeat: no-repeat;
