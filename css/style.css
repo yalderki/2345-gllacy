@@ -1022,7 +1022,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	padding-top: 321px;
 	text-align: center;
-	color: #fffffffff;
+	color: #ffffff;
 }
 
 .slider-controls {
@@ -1040,7 +1040,7 @@ input[type="radio"].visually-hidden {
 	height: 17px;
 	margin-right: 8px;
 	background-color: transparent;
-	border: 2px solid #fffffffff;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
 	cursor: pointer;
 	-webkit-transition: all 0.3s ease;
@@ -1075,7 +1075,7 @@ input[type="radio"].visually-hidden {
 #product-1:checked ~ .site-wrapper label[for="product-1"],
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
-	background-color: #fffffffff;
+	background-color: #ffffff;
 }
 
 .slider ul {
@@ -1113,7 +1113,7 @@ input[type="radio"].visually-hidden {
 	font-size: 31px;
 	line-height: 41px;
 	text-align: center;
-	color: #fffffffff;
+	color: #ffffff;
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	background: #f26843;
@@ -2096,7 +2096,7 @@ select::-ms-expand {
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid #fffffffff;
+	border: 8px solid #ffffff;
 	background-color: #ababab;
 	box-shadow: 0 2px 1px 0 #cfcfcf;
 	border-radius: 50%;
