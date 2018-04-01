@@ -1895,13 +1895,13 @@ footer {
 	line-height: 18px;
 }
 
-.footer-copyright a {
+.footer-copyright .copyright-link {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus,
-.footer-copyright a:active {
+.footer-copyright .copyright-link:hover,
+.footer-copyright .copyright-link:focus,
+.footer-copyright .copyright-link:active {
 	color: #ffbc9e;
 	border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
