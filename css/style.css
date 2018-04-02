@@ -197,6 +197,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
 	padding: 5px 12px;
+	margin-right: 5px;
 }
 
 .site-navigation-item > a {
@@ -1012,7 +1013,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-	margin-bottom: 43px;
+	margin-bottom: 41px;
 	position: relative;
 	padding-top: 321px;
 	text-align: center;
@@ -1095,7 +1096,7 @@ input[type="radio"].visually-hidden {
 
 	width: 700px;
 	margin: 0 auto;
-	margin-bottom: 27px;
+	margin-bottom: 29px;
 	font-weight: 800;
 }
 
@@ -1166,19 +1167,19 @@ input[type="radio"].visually-hidden {
 .action-name {
 	font-weight: 700;
 	font-size: 35px;
-	line-height: 41px;
+	line-height: 40px;
 	margin-bottom: 15px;
 }
 
 .action-description {
 	font-weight: 700;
 	font-size: 18px;
-	margin-bottom: 40px;
+	margin-bottom: 43px;
 }
 
 .actions .button {
 	float: right;
-	padding: 13px 24px;
+	padding: 12px 22px;
 	border-radius: 25px;
 	margin-bottom: 5px;
 	background: -webkit-linear-gradient(#f26843 0%, #e74a35 100%);
@@ -1201,7 +1202,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-items {
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 
 .catalog-items {
@@ -1367,7 +1368,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 15px;
 	margin-bottom: 39px;
 	box-sizing: border-box;
-	padding: 28px 20px 10px;
+	padding: 25px 20px 12px;
 }
 
 .presentation-container {
@@ -1396,69 +1397,44 @@ input[type="radio"].visually-hidden {
 .presentation-wrapper p {
 	position: relative;
 	padding-left: 58px;
-	width: 541px;
+	width: 540px;
 	box-sizing: border-box;
 	margin: 12px 0;
+}
+
+.presentation-wrapper .column-1::before,
+.presentation-wrapper .column-2::before,
+.presentation-wrapper .column-3::before,
+.presentation-wrapper .column-4::before {
+		position: absolute;
+	top: -12px;
+	left: 0px;
+
+	width: 50px;
+	height: 50px;
+
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .presentation-wrapper .column-1::before {
 	content: "";
 	background-image: url("../img/icecream-icon.svg");
-
-	position: absolute;
-	top: -12px;
-	left: 0px;
-
-	width: 50px;
-	height: 50px;
-
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .presentation-wrapper .column-2::before {
 	content: "";
 	background-image: url("../img/leaf-icon.svg");
-
-	position: absolute;
-	top: -12px;
-	left: 0px;
-
-	width: 50px;
-	height: 50px;
-
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .presentation-wrapper .column-3::before {
 	content: "";
 	background-image: url("../img/angus-icon.svg");
-
-	position: absolute;
-	top: -12px;
-	left: 0px;
-
-	width: 50px;
-	height: 50px;
-
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .presentation-wrapper .column-4::before {
 	content: "";
 	background-image: url("../img/thermometer-icon.svg");
-
-	position: absolute;
-	top: -12px;
-	left: 0px;
-
-	width: 50px;
-	height: 50px;
-
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .presentation .presentation-name,
@@ -1472,10 +1448,9 @@ input[type="radio"].visually-hidden {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 30px;
-	margin-bottom: 7px;
+	margin-bottom: 9px;
 }
 
-/*=== Блог ===*/
 .blog {
 	margin-bottom: 38px;
 	display: -webkit-box;
