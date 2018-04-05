@@ -652,7 +652,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-item input:hover,
-.feedback-item textarea {
+.feedback-item input:focus {
 	padding: 0 9px;
 }
 
